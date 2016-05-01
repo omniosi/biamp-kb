@@ -178,6 +178,12 @@ blockquote {
   background-size: 10%;
   border-bottom: 1px solid #D9272E;
 }
+.nav li.an{ background: url(../img/icon_audia-nexia.png) no-repeat; background-position: 90% 50%; -webkit-background-size: 20%; background-size: 20%; }
+.nav li.te{ background: url(../img/icon_tesira.png) no-repeat; background-position: 90% 50%; -webkit-background-size: 10%; background-size: 10%; }
+.nav li.vo{ background: url(../img/icon_vocia.png) no-repeat; background-position: 90% 50%; -webkit-background-size: 10%; background-size: 10%; }
+.nav li.de{ background: url(../img/icon_devio.png) no-repeat; background-position: 90% 50%; -webkit-background-size: 10%; background-size: 10%; }
+.nav li.vi{ background: url(../img/icon_voip.png) no-repeat; background-position: 90% 50%; -webkit-background-size: 10%; background-size: 10%; }
+.nav li.vd{ background: url(../img/icon_videos.png) no-repeat; background-position: 90% 50%; -webkit-background-size: 10%; background-size: 10%; }
 /* Site footer */
 .site-footer {
   padding: 20px 0;
