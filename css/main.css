@@ -14,6 +14,8 @@ dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0; }
 
+ul{ list-style: none; }
+
 /**
  * Basic styling
  */
@@ -163,16 +165,27 @@ blockquote {
 .site-nav {
   float: right;
   line-height: 56px; }
+.nav{
+  background: #E6E7E8;
+  margin: 0;
+}
+.nav li{
+  padding: 5% 10%;
+  color: #D9272E;
+  background: url(../img/icon_general.png) no-repeat;
+  background-position: 90% 50%;
+  -webkit-background-size: 10%;
+  background-size: 10%;
+  border-bottom: 1px solid #D9272E;
+}
 /* Site footer */
 .site-footer {
   padding: 20px 0;
   background: #D9272E;
   color: white;
   font-size: 14px;
-}
-.site-footer ul{
   list-style: none;
-  padding: 0 10%;
+  padding: 5% 10%;
   margin: 0;
 }
 .site-footer li{
