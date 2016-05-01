@@ -134,19 +134,20 @@ blockquote {
 .site-header {
   min-height: 100px;
   position: relative;
+  padding: 2em;
+  padding: 10%;
 }
 .site-header .logo-left,
 .site-header .logo-right {
-  position: relative;
+  /*position: relative;*/
 }
 .site-header .logo-left {
-  left: 50px;
-  top: 35px;
+  /*left: 50px; top: 35px;*/
 }
 .site-header .logo-right {
-  position: absolute;
-  right: 50px;
-  top: 35px;
+  /*position: absolute;*/
+  /*right: 50px; top: 35px;*/
+  float: right;
 }
 
 .site-title {
@@ -167,8 +168,21 @@ blockquote {
   padding: 20px 0;
   background: #D9272E;
   color: white;
+  font-size: 14px;
 }
-
+.site-footer ul{
+  list-style: none;
+  padding: 0 10%;
+  margin: 0;
+}
+.site-footer li{
+  /*display: inline-block;*/
+  text-align: center;
+  font-size: 16px;
+}
+.site-footer li.name{
+  margin-bottom: 0.5em;
+}
 /**
  * Page content
  */
@@ -189,9 +203,9 @@ blockquote {
 
 #search {
   /*width: 515px;*/
-  height: 60px;
+  /*height: 60px;*/
   /*padding: 30px;*/
-  padding: 5%;
+  padding: 5% 18% 5% 5%;
   position: relative;
   /*left: 25%;*/
   top: 25%;
@@ -208,9 +222,11 @@ blockquote {
 .content h1{
   color: #D9272E;
   font-weight: bold;
-  font-size: 14px;
+  /*font-size: 14px;*/
+  font-size: 16px;
 }
 .content p{
   color: #6D6E71;
-  font-size: 14px;
+  /*font-size: 14px;*/
+  font-size: 16px;
 }
