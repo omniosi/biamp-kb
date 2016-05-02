@@ -239,7 +239,7 @@ blockquote {
 #submit {
   display: inline-block;
 }
-
+#submit{ display: none; }
 #search {
   /*width: 515px;*/
   /*height: 60px;*/
@@ -251,7 +251,6 @@ blockquote {
   font: italic 15px "Helvetica Neue Medium Italic", Arial, sans-serif;
   background: #fff url(../img/search-icon.png) 95% 50% no-repeat;
 }
-#submit{ display: none; }
 .content{
   position: relative;
   width: 80%;
@@ -269,7 +268,11 @@ blockquote {
   /*font-size: 14px;*/
   font-size: 16px;
 }
-
+.footer-nav{
+    margin: 0;
+ }
+.copyright,
+.feature{ display: none; }
 
 @media (min-width: 701px) {
 
@@ -290,6 +293,7 @@ blockquote {
   }
   .nav-bar{
     position: relative;
+    top: -150px;
   }
   .nav-bar .content{
     padding: 0;
@@ -304,14 +308,15 @@ blockquote {
     border: none;
     position: relative;
     width: 60%;
+    padding-left: 3%;
   }
-  .nav.two{width: 30%;position: relative;float: right;}
+  .nav.two{width: 35%;position: relative;float: right;}
   .nav li{
     display: inline-block;
     /*margin: 0 2em;*/
     /*margin: 0 8%;*/
     margin: 0 4%;
-    padding: 6em 0 1em;
+    padding: 6em 0 0;
     background-position: 50% 0;
     -webkit-background-size: auto;
     background-size: auto;
@@ -321,11 +326,11 @@ blockquote {
     position: relative;
     z-index: 2;
     /*left: 2em;*/
-    left: 9%;
+    /*left: 9%;*/
   }
-  .nav.two li.vd{ left: 8%; }
-  .nav.two li{ left: 8%; }
-  .nav li.an{
+  /*.nav.two li{ left: 8%; margin: 0 5%; }*/
+  /*.nav.two li.vd{ left: 8%; }*/
+    .nav li.an{
     -webkit-background-size: auto;
     background-size: auto;
     width: 101px;
@@ -335,7 +340,7 @@ blockquote {
   .nav li.vi{
     position: relative;
     /*left: 3em;*/
-    left: 9%;
+    /*left: 9%;*/
   }
   .nav li.line{
     display: inline-block;
@@ -348,6 +353,7 @@ blockquote {
     top: 28px;
     left: 1px;
     padding: 0;
+    margin: 0;
     z-index: 1;
   }
   .nav li.line:after,
@@ -365,4 +371,47 @@ blockquote {
     left: auto;
     right: 0;
   }
+  .main{
+    position: relative;
+    top: 120px;
+  }
+  .feature{
+    display: block;
+    background-color: #E6E7E8;
+    border: 1px solid #6D6E71;
+    padding: 20px 3% 5px;
+    width: 72%;
+    margin: 0 4.5% 40px;
+  }
+  .feature p,
+  .feature h1{
+    font-size: 16px;
+    text-align: left;
+  }
+  .copyright{
+    display: inline-block;
+    font-size: 8px;
+    float: left;
+    position: relative;
+    top: 6px;
+  }
+  .site-footer{
+    padding: 1% 5% 0;
+ }
+ .footer-nav{
+    /*position: relative;*/
+    /*float: right;*/
+    margin: 0;
+    text-align: right;
+ }
+ .footer-nav li{
+    display: inline-block;
+    padding: 0 2%;
+    border-right: 1px solid #fff;
+    font-size: 14px;
+ }
+ .footer-nav li:last-child{
+    border-right: none;
+    padding-right: 0;
+ }
 }
