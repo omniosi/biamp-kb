@@ -165,25 +165,45 @@ blockquote {
 .site-nav {
   float: right;
   line-height: 56px; }
-.nav{
+.nav-bar{
   background: #E6E7E8;
+}
+.nav-bar .content{
+  padding: 0;
+  width: 100%;
+  left: 0;
+}
+.nav{
   margin: 0;
+  border-top: 2px solid #D9272E;
 }
 .nav li{
-  padding: 5% 10%;
+  /*padding: 5% 10%;*/
+  padding: 1em 10%;
   color: #D9272E;
-  background: url(../img/icon_general.png) no-repeat;
+  background-image: url(../img/icon_general.png);
+  background-repeat: no-repeat;
   background-position: 90% 50%;
-  -webkit-background-size: 10%;
-  background-size: 10%;
+  /*-webkit-background-size: 10%;*/
+  /*background-size: 10%;*/
+  -webkit-background-size: 2em;
+  background-size: 2em;
   border-bottom: 1px solid #D9272E;
 }
-.nav li.an{ background: url(../img/icon_audia-nexia.png) no-repeat; background-position: 90% 50%; -webkit-background-size: 20%; background-size: 20%; }
-.nav li.te{ background: url(../img/icon_tesira.png) no-repeat; background-position: 90% 50%; -webkit-background-size: 10%; background-size: 10%; }
-.nav li.vo{ background: url(../img/icon_vocia.png) no-repeat; background-position: 90% 50%; -webkit-background-size: 10%; background-size: 10%; }
-.nav li.de{ background: url(../img/icon_devio.png) no-repeat; background-position: 90% 50%; -webkit-background-size: 10%; background-size: 10%; }
-.nav li.vi{ background: url(../img/icon_voip.png) no-repeat; background-position: 90% 50%; -webkit-background-size: 10%; background-size: 10%; }
-.nav li.vd{ background: url(../img/icon_videos.png) no-repeat; background-position: 90% 50%; -webkit-background-size: 10%; background-size: 10%; }
+/*.nav li.an{ background-image: url(../img/icon_audia-nexia.png); -webkit-background-size: 20%; background-size: 20%; }
+.nav li.te{ background-image: url(../img/icon_tesira.png); }
+.nav li.vo{ background-image: url(../img/icon_vocia.png); }
+.nav li.de{ background-image: url(../img/icon_devio.png); }
+.nav li.vi{ background-image: url(../img/icon_voip.png); }
+.nav li.vd{ background-image: url(../img/icon_videos.png); }
+*/
+.nav li.an{ background-image: url(../img/icon_audia-nexia.png); -webkit-background-size: 4em; background-size: 4em; }
+.nav li.te{ background-image: url(../img/icon_tesira.png); }
+.nav li.vo{ background-image: url(../img/icon_vocia.png); }
+.nav li.de{ background-image: url(../img/icon_devio.png); }
+.nav li.vi{ background-image: url(../img/icon_voip.png); }
+.nav li.vd{ background-image: url(../img/icon_videos.png); }
+.nav li.line{ display: none }
 /* Site footer */
 .site-footer {
   padding: 20px 0;
@@ -224,7 +244,7 @@ blockquote {
   /*width: 515px;*/
   /*height: 60px;*/
   /*padding: 30px;*/
-  padding: 5% 18% 5% 5%;
+  padding: 5% 15% 5% 5%;
   position: relative;
   /*left: 25%;*/
   top: 25%;
@@ -248,4 +268,101 @@ blockquote {
   color: #6D6E71;
   /*font-size: 14px;*/
   font-size: 16px;
+}
+
+
+@media (min-width: 701px) {
+
+  .site-header{
+    padding: 3% 5%;
+  }
+  #searchbox{
+    height: 235px;
+  }
+  #search{
+    padding: 3% 12% 3% 3%;
+    top: 33%;
+  }
+  .content h1,
+  .content p{
+    font-size: 14px;
+    text-align: center;
+  }
+  .nav-bar{
+    position: relative;
+  }
+  .nav-bar .content{
+    padding: 0;
+    width: 80%;
+    /*left: 0;*/
+    padding: 20px 0%;
+    margin: 0 auto;
+  }
+  .nav{
+    display: inline-block;
+    font-size: 11px;
+    border: none;
+    position: relative;
+    width: 60%;
+  }
+  .nav.two{width: 30%;position: relative;float: right;}
+  .nav li{
+    display: inline-block;
+    /*margin: 0 2em;*/
+    /*margin: 0 8%;*/
+    margin: 0 4%;
+    padding: 6em 0 1em;
+    background-position: 50% 0;
+    -webkit-background-size: auto;
+    background-size: auto;
+    width: 49px;
+    border-bottom: none;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    /*left: 2em;*/
+    left: 9%;
+  }
+  .nav.two li.vd{ left: 8%; }
+  .nav.two li{ left: 8%; }
+  .nav li.an{
+    -webkit-background-size: auto;
+    background-size: auto;
+    width: 101px;
+    position: relative;
+  }
+  .nav li.an,
+  .nav li.vi{
+    position: relative;
+    /*left: 3em;*/
+    left: 9%;
+  }
+  .nav li.line{
+    display: inline-block;
+    background-image: none;
+    background-color: #6D6E71;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    /*top: 30%;*/
+    top: 28px;
+    left: 1px;
+    padding: 0;
+    z-index: 1;
+  }
+  .nav li.line:after,
+  .nav li.line:before{
+    content: "";
+    background: url(../img/left-arrow.png) no-repeat;
+    width: 4px;
+    height: 8px;
+    position: absolute;
+    top: -4px;
+    left: 0;
+  }
+  .nav li.line:after{
+    background: url(../img/right-arrow.png) no-repeat;
+    left: auto;
+    right: 0;
+  }
 }
