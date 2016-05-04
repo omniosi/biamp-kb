@@ -136,8 +136,7 @@ blockquote {
 .site-header {
   min-height: 100px;
   position: relative;
-  padding: 2em;
-  padding: 10%;
+  padding: 2em 10%;
 }
 .site-header .logo-left,
 .site-header .logo-right {
@@ -244,7 +243,7 @@ blockquote {
   /*width: 515px;*/
   /*height: 60px;*/
   /*padding: 30px;*/
-  padding: 5% 15% 5% 5%;
+  padding: 1.25em 15% 1.25em 5%;
   position: relative;
   /*left: 25%;*/
   top: 25%;
@@ -274,7 +273,7 @@ blockquote {
 .copyright,
 .feature{ display: none; }
 
-@media (min-width: 701px) {
+@media (min-width: 830px) {
 
   .site-header{
     padding: 3% 5%;
