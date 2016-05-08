@@ -5,7 +5,7 @@
     height: 235px;
   }
   #search{
-    padding: 3% 12% 3% 3%;
+    padding: 2em 12% 2em 3%;
     top: 33%;
   }
   .content h1,
@@ -119,6 +119,8 @@
   }
   .site-footer{
     padding: 1% 5% 0;
+    position: relative;
+    top: 4px;
  }
  .footer-nav{
     /*position: relative;*/
