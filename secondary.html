@@ -4,10 +4,14 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Biamp Secondary</title>
-	<link rel="stylesheet" href="css/main.css">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="css/main.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body class="secondary">
 	<header class="logobox">
@@ -17,7 +21,7 @@
 	<div class="searchnav">
 		<h1 class="title vocia">Vocia</h1>
 		<form id="searchbox" action="">
-			<input type="text" id="search" placeholder="Can we help?">
+			<input type="text" id="search" placeholder="How can we help?">
 			<input type="submit" id="submit" value="Search">
 		</form>
 		<ul class="social">
@@ -27,30 +31,49 @@
 			<li class="googleplus">googleplus</li>
 		</ul>
 	</div>
-	<div class="content main">
-		<h1>WELCOME TO CORNERSTONE, BIAMP’S ONLINE TECHNICAL SUPPORT KNOWLEDGE BASE.</h1>
-		<p>This site is devoted to in–depth technical information on Biamp products. Please search for the information you need, or start browsing through our articles by selecting a category or using the search bar.</p>
-	</div>
-	<div class="nav-bar">
-		<div class="content">
-			<ul class="nav one">
-				<li class="line"></li>
-				<li class="an">AUDIA NEXIA</li>
-				<li class="te">TESIRA</li>
-				<li class="vo">VOCIA</li>
-				<li class="de">DEVIO</li>
-			</ul>
-			<ul class="nav two">
-				<li class="line"></li>
-				<li class="vi">VoIP</li>
-				<li class="ge">GENERAL</li>
-				<li class="vd">VIDEOS</li>
-			</ul>
+	<div class="main">
+		<div id="accordion">
+			<h3>Articles</h3>
+			<div>
+				<h4>Control &amp; Communications</h4>
+				<p>Articles about controlling and communicating with a Vocia system.</p>
+				<h4>TTS - 1</h4>
+				<p>Learn how to integrate Text-To-Speech functionality into a Vocia system.</p>
+				<h4>Miscellaneous</h4>
+				<p>Miscellaneous Vocia articles.</p>
+				<h4>VoIP</h4>
+				<p>Learn how to integrate Biamp’s Vocia MS-1 VoIP port with any SIP-based VoIP system.</p>
+			</div>
+			<h3>Documents</h3>
+			<div>
+				<h4>Header title FPO</h4>
+				<p>This site is devoted to in–depth technical information on Biamp products. Please search for the information you need, or start browsing through our articles by selecting a category or using the search bar. FPO</p>
+			</div>
+			<h3>Software/Firmware</h3>
+			<div>
+				<h4>Header title FPO</h4>
+				<p>This site is devoted to in–depth technical information on Biamp products. Please search for the information you need, or start browsing through our articles by selecting a category or using the search bar. FPO</p>
+			</div>
+			<h3>Vocia FAQ</h3>
+			<div>
+				<h4>Header title FPO</h4>
+				<p>This site is devoted to in–depth technical information on Biamp products. Please search for the information you need, or start browsing through our articles by selecting a category or using the search bar. FPO</p>
+			</div>
 		</div>
 	</div>
 	<div class="content feature">
 		<h1>FEATURED ARTICLE</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis  <a href="#" target="_blank">nostrud</a>  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<div class="related">
+		<h1>Related Articles</h1>
+		<ul>
+			<li>Vocia Documents</li>
+			<li>Vocia Software &amp; Firmware</li>
+			<li>VoIP</li>
+			<li>TTS–1</li>
+			<li>Control &amp; Communications</li>
+		</ul>
 	</div>
 	<div class="site-footer">
 		<p class="copyright">Copyright 2013-2016 Biamp Systems. All rights reserved.</p>
