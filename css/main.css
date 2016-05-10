@@ -149,9 +149,7 @@ blockquote {
 .searchnav .title{
   color: #D9272E;
   background-repeat: no-repeat;
-  /*padding-left: 80px;*/
-  /*padding: 0.125em 0 0.125em 20%;*/
-  padding: 0.125em 0 0.5em 26%;
+  padding: 0.125em 0 0.5em 70px;
   margin-left: 10%;
   text-transform: uppercase;
   margin: 0 auto;
@@ -513,4 +511,43 @@ blockquote {
     border-right: none;
     padding-right: 0;
  }
+ .second{
+  position: absolute;
+  right: 5%;
+  width: 40%;
+  padding: 1em 0;
+ }
+ .searchnav .second .social,
+ .searchnav .second #searchbox,
+ .searchnav .second,
+ .searchnav .title{
+    display: inline-block;
+    vertical-align: top;
+ }
+ .searchnav .title{
+    margin: 0;
+    padding: 1em 0 1em 70px;
+    width: 30%;
+ }
+  .searchnav .title.vocia{
+    background: url(/img/icon_vocia_h.png) 0 50% no-repeat;
+  }
+  .secondary #search{
+    width: auto;
+    padding: 1.25em 15% 1.25em 10%;
+  }
+  .secondary #searchbox{
+    height: auto;
+    /*float: right;*/
+    position: relative;
+    top: 12px;
+  }
+  .secondary .searchnav{
+    padding: 1em 5% 1em 10%;
+  }
+  .secondary .searchnav .social{
+    width: auto;
+    float: right;
+    padding-top: 1.25em;
+  }
 }
