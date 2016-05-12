@@ -514,7 +514,7 @@ blockquote {
  .second{
   position: absolute;
   right: 5%;
-  width: 40%;
+  width: 47%;
   padding: 1em 0;
  }
  .searchnav .second .social,
@@ -530,11 +530,11 @@ blockquote {
     width: 30%;
  }
   .searchnav .title.vocia{
-    background: url(/img/icon_vocia_h.png) 0 50% no-repeat;
+    background: url(../img/icon_vocia_h.png) 0 50% no-repeat;
   }
   .secondary #search{
     width: auto;
-    padding: 1.25em 15% 1.25em 10%;
+    padding: 1.25em 50px 1.25em 15px;
   }
   .secondary #searchbox{
     height: auto;
