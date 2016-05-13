@@ -265,7 +265,7 @@ blockquote {
 
 /* --- jquery ui accordion --- */
 .ui-accordion .ui-accordion-icons{
-  padding-left: 10%;
+  padding-left: 15%;
 }
 .ui-accordion .ui-accordion-header{
   margin: 0;
@@ -315,7 +315,7 @@ blockquote {
   border-top-left-radius: 0;
 }
 .ui-accordion .ui-accordion-header .ui-accordion-header-icon{
-  left: 10%;
+  left: 15%;
   top: 100%;
   margin-top: 0;
 }
@@ -340,6 +340,10 @@ blockquote {
   background: white;
 }
 
+.ui-accordion p,
+.ui-accordion h4{
+  margin: 0 0 0.5em 8%;
+}
 .ui-accordion h4{
   color: #D9272E;*/
   font-size: 18px;
@@ -364,9 +368,13 @@ blockquote {
   font-weight: bold;
   margin-left: 10%;
   margin-left: 0;
+  text-transform: uppercase;
 }
 .related ul{
-  margin-left: 0;
+  margin: 0;
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
 }
 
 /* --- desktop styles --- */
@@ -472,6 +480,9 @@ blockquote {
     position: relative;
     top: 120px;
   }
+  .secondary .main{
+    top: 0;
+  }
   .feature{
     display: block;
     background-color: #E6E7E8;
@@ -514,7 +525,7 @@ blockquote {
  .second{
   position: absolute;
   right: 5%;
-  width: 47%;
+  width: 400px;
   padding: 1em 0;
  }
  .searchnav .second .social,
