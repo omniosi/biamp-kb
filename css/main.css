@@ -153,8 +153,7 @@ blockquote {
   margin-left: 10%;
   text-transform: uppercase;
   margin: 0 auto;
-  /*width: 50%;*/
-  width: 65%;
+  width: 180px;
 }
 .searchnav .title.vocia{ background: url('../img/icon_vocia_h.png') no-repeat; }
 #searchbox {
@@ -183,8 +182,7 @@ blockquote {
 }
 .searchnav .social{
   margin: 0 auto;
-  /*width: 45%;*/
-  width: 56%;
+  width: 145px;
   padding-top: 1em;
 }
 .searchnav .social li{
@@ -228,11 +226,11 @@ blockquote {
   color: white;
   font-size: 14px;
   list-style: none;
-  padding: 5% 10%;
+  padding: 1em 35px;
   margin: 0;
 }
 .site-footer li{
-  text-align: center;
+  /*text-align: center;*/
   font-size: 16px;
 }
 .site-footer li.name{
@@ -260,12 +258,15 @@ blockquote {
 .footer-nav{
     margin: 0;
  }
+ .footer-nav .name{
+  font-weight: bold;
+}
 .copyright,
 .feature{ display: none; }
 
 /* --- jquery ui accordion --- */
 .ui-accordion .ui-accordion-icons{
-  padding-left: 15%;
+  padding-left: 35px;
 }
 .ui-accordion .ui-accordion-header{
   margin: 0;
@@ -315,7 +316,7 @@ blockquote {
   border-top-left-radius: 0;
 }
 .ui-accordion .ui-accordion-header .ui-accordion-header-icon{
-  left: 15%;
+  left: 35px;
   top: 100%;
   margin-top: 0;
 }
@@ -333,7 +334,7 @@ blockquote {
   height: 27px;
 }
 .ui-accordion .ui-accordion-content{
-  padding: 2em 10%;
+  padding: 2em 40px;
 }
 .ui-widget-content{
   border: none;
@@ -342,7 +343,7 @@ blockquote {
 
 .ui-accordion p,
 .ui-accordion h4{
-  margin: 0 0 0.5em 8%;
+  margin: 0 0 0.5em 10px;
 }
 .ui-accordion h4{
   color: #D9272E;*/
@@ -361,7 +362,7 @@ blockquote {
 .related{
   background: #BCBEC0;
   color: white;
-  padding: 1em 10%;
+  padding: 1em 35px;
 }
 .related h1{
   font-size: 16px;
@@ -371,12 +372,37 @@ blockquote {
   text-transform: uppercase;
 }
 .related ul{
-  margin: 0;
-  width: 49%;
-  display: inline-block;
-  vertical-align: top;
+  margin-left: 15px;
+  margin-bottom: 0;
 }
 
+/* --- desktop styles --- */
+@media (min-width: 480px) {
+  .related{
+    padding: 1em 35px;
+  }
+  .related ul{
+    margin: 0 20px 0 0;
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .site-footer li{
+    width: auto;
+    display: inline-block;
+    margin-right: 8%;
+    margin-right: 4%;
+  }
+  .site-footer li.name{
+    display: block;
+  }
+}
+@media (min-width: 645px) {
+  .site-footer li.name{
+    display: inline-block;
+  }
+
+}
 /* --- desktop styles --- */
 @media (min-width: 830px) {
 
@@ -538,7 +564,6 @@ blockquote {
  .searchnav .title{
     margin: 0;
     padding: 1em 0 1em 70px;
-    width: 30%;
  }
   .searchnav .title.vocia{
     background: url(../img/icon_vocia_h.png) 0 50% no-repeat;
@@ -561,4 +586,22 @@ blockquote {
     float: right;
     padding-top: 1.25em;
   }
+ .ui-accordion .ui-accordion-icons{
+  padding-left: 155px;
+}
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon{
+  left: 155px;
+}
+ .ui-accordion p,
+  .ui-accordion h4{
+    margin: 0 0 0.5em 0;
+    padding-left: 85px;
+  }
+  .site-footer li{
+    margin-right: 0;
+  }
+  .related{
+    padding: 1em 130px;
+  }
+
 }
