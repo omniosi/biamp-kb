@@ -89,6 +89,10 @@ a:hover {
   /*color: #6D6E71;*/
   text-decoration: underline;
 }
+a:hover,
+a{
+  color: white;
+}
 
 /**
  * Blockquotes
@@ -522,7 +526,7 @@ blockquote {
   }
   .secondary .main{
     top: 0;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
   }
   .feature{
     display: block;
