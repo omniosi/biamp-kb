@@ -76,14 +76,19 @@ h1, h2, h3, h4, h5, h6 {
 /**
  * Links
  */
+.ui-widget-content a ,
 a {
   color: #D9272E;
   text-decoration: none; }
-  a:visited {
-    color: #991b20; }
-  a:hover {
-    color: #6D6E71;
-    text-decoration: underline; }
+.ui-widget-content a:visited,
+a:visited {
+  color: #E6E7E8;
+}
+.ui-widget-content a:hover,
+a:hover {
+  /*color: #6D6E71;*/
+  text-decoration: underline;
+}
 
 /**
  * Blockquotes
@@ -356,6 +361,15 @@ blockquote {
   font-style: italic;
   padding-bottom: 1.5em;
 }
+.ui-accordion ul{
+  /*margin-left: 2%;*/
+}
+.ui-accordion ul li{
+  list-style-image: url(../img/list-dot.png);
+  margin-left: 2%;
+  margin-bottom: 0.75em;
+  font-size: 14px;
+}
 :foc user agent stylesheet us{
   outline: -webkit-focus-ring-color auto 1px;
 }
@@ -508,6 +522,7 @@ blockquote {
   }
   .secondary .main{
     top: 0;
+    padding-bottom: 100px;
   }
   .feature{
     display: block;
@@ -531,6 +546,9 @@ blockquote {
   }
   .site-footer{
     padding: 1% 5% 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
  }
  .footer-nav{
     /*position: relative;*/
@@ -598,8 +616,11 @@ blockquote {
     padding-left: 15px;
   }
   .ui-accordion .ui-accordion-content{
-    padding: 2em 0 0 155px;
+    padding: 2em 10% 0 155px;
   }
+  .ui-accordion ul{
+  margin-left: 2%;
+}
   .site-footer li{
     margin-right: 0;
   }
