@@ -76,22 +76,27 @@ h1, h2, h3, h4, h5, h6 {
 /**
  * Links
  */
+ .footer-nav a:hover,
+ .footer-nav a,
+ a:hover,
+a{
+  color: white;
+}
 .ui-widget-content a ,
+.nav a ,
 a {
   color: #D9272E;
   text-decoration: none; }
 .ui-widget-content a:visited,
+.nav a:visited,
 a:visited {
   color: #E6E7E8;
 }
 .ui-widget-content a:hover,
+.nav a:hover,
 a:hover {
   /*color: #6D6E71;*/
   text-decoration: underline;
-}
-a:hover,
-a{
-  color: white;
 }
 
 /**
@@ -153,7 +158,13 @@ blockquote {
   background: url(../img/hex-bk_35o.png) center 0 no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
-  padding: 1em 10%;
+  /*padding: 1em 10%;*/
+  padding: 50px 10%;
+}
+.home .searchnav{
+  background: url(../img/facet-art.png) center 0 no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 .searchnav .title{
   color: #D9272E;
@@ -206,11 +217,15 @@ blockquote {
 .searchnav .social li.facebook{ background-image: url(../img/icon_social_facebook.png); }
 .searchnav .social li.googleplus{ background-image: url(../img/icon_social_googleplus.png); }
 
+.nav-bar{
+  background: #E6E7E8;
+  padding: 0;
+}
 .nav{
   background-color: #E6E7E8;
   margin: 0;
 }
-.nav li{
+.nav li a{
   padding: 1em 10%;
   color: #D9272E;
   background-color: #E6E7E8;
@@ -220,14 +235,15 @@ blockquote {
   -webkit-background-size: 2em;
   background-size: 2em;
   border-bottom: 1px solid #D9272E;
+  display: block;
 }
-.nav li.an{ background-image: url(../img/icon_audia-nexia.png); -webkit-background-size: 4em; background-size: 4em; }
-.nav li.te{ background-image: url(../img/icon_tesira.png); }
-.nav li.vo{ background-image: url(../img/icon_vocia.png); }
-.nav li.de{ background-image: url(../img/icon_devio.png); }
-.nav li.vi{ background-image: url(../img/icon_voip.png); }
-.nav li.vd{ background-image: url(../img/icon_videos.png); }
-.nav li.line{ display: none }
+.nav li.an a{ background-image: url(../img/icon_audia-nexia.png); -webkit-background-size: 4em; background-size: 4em; }
+.nav li.te a{ background-image: url(../img/icon_tesira.png); }
+.nav li.vo a{ background-image: url(../img/icon_vocia.png); }
+.nav li.de a{ background-image: url(../img/icon_devio.png); }
+.nav li.vi a{ background-image: url(../img/icon_voip.png); }
+.nav li.vd a{ background-image: url(../img/icon_videos.png); }
+.nav li.line a { display: none }
 /* Site footer */
 .site-footer {
   padding: 20px 0;
@@ -429,11 +445,18 @@ blockquote {
     padding: 3% 5%;
   }
   #searchbox{
-    height: 235px;
+    /*height: 235px;*/
   }
   #search{
     padding: 2em 12% 2em 3%;
     top: 33%;
+  }
+  .home #search{
+    padding: 2em 12% 2em 4%;
+  }
+  .home #submit{
+    right: 3%;
+    top: 20%;
   }
   .content h1,
   .content p{
@@ -442,7 +465,11 @@ blockquote {
   }
   .nav-bar{
     position: relative;
+    padding: 40px 10% 35px;
     top: -150px;
+  }
+  .home .nav-bar{
+    top: -133px;
   }
   .nav-bar .content{
     padding: 0;
@@ -462,6 +489,13 @@ blockquote {
   .nav.two{width: 35%;position: relative;float: right;}
   .nav li{
     display: inline-block;
+    margin-right: 11%;
+  }
+  .nav li:last-child{
+    margin-right: 0;
+  }
+  .nav li a{
+    display: inline-block;
     /*margin: 0 2em;*/
     /*margin: 0 8%;*/
     margin: 0 4%;
@@ -479,14 +513,14 @@ blockquote {
   }
   /*.nav.two li{ left: 8%; margin: 0 5%; }*/
   /*.nav.two li.vd{ left: 8%; }*/
-    .nav li.an{
+    .nav li.an a{
     -webkit-background-size: auto;
     background-size: auto;
     width: 101px;
     position: relative;
   }
-  .nav li.an,
-  .nav li.vi{
+  .nav li.an a,
+  .nav li.vi a{
     position: relative;
     /*left: 3em;*/
     /*left: 9%;*/
@@ -523,6 +557,7 @@ blockquote {
   .main{
     position: relative;
     top: 120px;
+    top: 160px;
   }
   .secondary .main{
     top: 0;
@@ -534,7 +569,8 @@ blockquote {
     border: 1px solid #6D6E71;
     padding: 20px 3% 5px;
     width: 72%;
-    margin: 0 4.5% 40px;
+    /*margin: 0 4.5% 40px;*/
+    margin: 0 4.5% 80px;
   }
   .feature p,
   .feature h1{
@@ -582,6 +618,9 @@ blockquote {
  .searchnav .title{
     display: inline-block;
     vertical-align: top;
+ }
+ .searchnav{
+  padding: 100px 10%;
  }
  .searchnav .title{
     margin: 0;
