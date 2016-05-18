@@ -375,6 +375,10 @@ blockquote {
   font-size: 18px;
   margin-bottom: 0.5em;
 }
+.ui-accordion ol{
+  margin-left: 5%;
+}
+.ui-accordion ol,
 .ui-accordion p{
   color: #6D6E71;
   font-size: 14px;
