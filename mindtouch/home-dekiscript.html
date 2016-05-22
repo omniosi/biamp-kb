@@ -1,0 +1,91 @@
+<div id="welcome-text" style="padding-left: 42px; padding-top:15px; width: 600px; text-align: center;"><span style="font-size: 16px;"><strong>"Welcome to Cornerstone, Biamp's online technical support knowledge base."</strong></span><br />"This site is devoted to in-depth technical information on Biamp products. Please search for the information you need, or start browsing through our articles by selecting a category below."</div>
+
+<div id="home-search" style="padding-top:10px;">
+    <form ('action')="/Special:Search">
+        <input name="type" type="hidden" value="wiki" />
+        <input class="home-search-field" name="search" ('placeholder')="Search Biamp Technical Support" type="text" />
+        <input class="home-search-button" type="image" src="/@api/deki/files/894/home-search2.png" />
+    </form>
+    if (!user.anonymous) {
+        <form action="/Special:Search">
+            <input name="search" type="text" value="" id="search-field2" ('placeholder')="Search Internal Knowledge Base only" />
+            <input name="qid" id="mt-qid-skin" type="hidden" value="" />
+            <input name="path" id="mt-search-path" class="no-searchscope-limit" type="hidden" value="Internal/Internal_articles" />
+            <input name="fpid" id="mt-search-filter-id" type="hidden" value="" />
+            <input name="fpth" id="mt-search-filter-path" type="hidden" value="" />
+            <input type="submit" id="search-button2" value="Go" />
+            <input name="type" id="mt-search-type" type="hidden" value="wiki" />
+        </form>
+    }
+</div>
+if (!user.anonymous) {
+    <br />
+}
+<div id="icon-wrapper" style="width:100%;">
+<div id="icons" style="display: table; margin: 0 auto; padding-top: 70px;">
+<div style="float: left;padding-right: 30px;"><a id="audia" href="/Audia-Nexia">" "</a></div>
+<div style="float: left;padding-right: 30px;"><a id="tesira" href="/Tesira">" "</a></div>
+<div style="float: left;padding-right: 40px;"><a id="vocia" href="/Vocia">" "</a></div>
+if (!user.anonymous) {
+    <div style="float: left; padding-right: 30px;"><a id="devio" href="/Devio">" "</a></div>
+}
+<div style="float: left;padding-right: 40px;"><img src="/@api/deki/files/912/icon_divider.png" width="3" height="62" border="0" /></div>
+<div style="float: left;padding-right: 30px;"><a id="voip" href="/VoIP">" "</a></div>
+<div style="float: left;padding-right: 30px;"><a id="general" href="/General">" "</a></div>
+<div style="float: left;padding-right: 30px;"><a id="videos" href="/Videos">" "</a></div>
+
+if (!user.anonymous) {
+    <div style="float: left;"><a id="internal" href="/Internal">" "</a></div>
+}
+</div>
+<div style="clear:both;"></div>
+</div>
+
+
+
+template("Biamp/Featured article", {
+    path:"/Tesira/Control/Oreno-Getting_started",
+    description:"Oreno is one of Biamp's newest products, allowing users to control a Tesira system from a computer, tablet, smartphone, or any device that has a web browser. This article introduces some new Oreno concepts and demonstrates how Oreno Manager gets installed as a web server."
+    });
+
+
+
+<div id="home-quick-links">
+    <div id="quick-links-heading">"Quick Links"</div>
+    <ul id="quick-links-list">
+        <li>
+            <div class="quick-links-heading-l2" style="margin-top:10px;"><a href="/Calculators">"Calculators"</a></div>
+            <ul>
+                <li><a href="/Audia-Nexia/Control/Audia-Nexia_command_string_calculator">"Audia/Nexia Command String"</a></li>
+                <li><a href="/Tesira/Control/Tesira_command_string_calculator">"Tesira Command String"</a></li>
+                <li><a href="/Calculators/Power_Draw-Heat_Dissipation_Calculator">"Power Draw / Heat Dissipation"</a></li>
+                <li><a href="/Calculators/Date_code_lookup">"Date Code Lookup"</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="quick-links-heading-l2"><a href="/Audia-Nexia">"Audia/Nexia"</a></div>
+            <ul>
+                <li><a href="/Audia-Nexia/Documents">"Documents"</a></li>
+                <li><a href="/Audia-Nexia/Software-Firmware">"Software & Firmware"</a></li>
+                <li><a href="/Audia-Nexia/Miscellaneous/Audia_FAQ">"Audia FAQ"</a></li>
+                <li><a href="/Audia-Nexia/Miscellaneous/Nexia_FAQ">"Nexia FAQ"</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="quick-links-heading-l2"><a href="/Tesira">"Tesira"</a></div>
+            <ul>
+                <li><a href="/Tesira/Documents">"Documents"</a></li>
+                <li><a href="/Tesira/Software-Firmware">"Software & Firmware"</a></li>
+                <li><a href="/Tesira/Miscellaneous/Tesira_FAQ">"FAQ"</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="quick-links-heading-l2"><a href="/Vocia">"Vocia"</a></div>
+            <ul>
+                <li><a href="/Vocia/Documents">"Documents"</a></li>
+                <li><a href="/Vocia/Software-Firmware">"Software & Firmware"</a></li>
+                <li><a href="/Vocia/Miscellaneous/Vocia_FAQ">"FAQ"</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>

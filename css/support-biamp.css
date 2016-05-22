@@ -1,0 +1,18 @@
+@highlight-color: #D9272E;
+@default-font-family: Arial, sans-serif;
+
+.mt-logo{
+  position: relative;
+  padding: 1.5em 10%;
+}
+.mt-logo img:last{
+	float: right;
+}
+
+/* --- desktop styles --- */
+@media (min-width: 830px) {
+
+  .mt-logo{
+    padding: 1.5em 5%;
+  }
+}
