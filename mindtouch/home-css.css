@@ -1,49 +1,47 @@
 div.widget {display:none;}
 #tray {display:none;}
-spanproduct-portfolio-hidden{display:none;}
+span.product-portfolio-hidden{display:none;}
 span.dw-hierarchy {display:none;}
 h1 {display:none;}
+
 
 div#search-wrapper
 {
     position: absolute;
 }
 
-div#home-search
-{
-    height: 28px;
-    width: 650px;
-    padding-left: 30px;
-}
-
-input.home-search-field
-{
-    border: 1px solid #cccccc;
-    width:560px;
-    height: 40px;
-    font-size:21px;
+input.home-search-field{
+    border: none;
+    font-size:15px;
+    font: italic 15px Arial, sans-serif;
     margin: 0px;
-    padding: 0px 5px;
+    top: 25%;
+    position: relative;
+    padding: 1.25em 15% 1.25em 5%;
+    border-radius: 0;
 }
 
 input.home-search-field:focus  /* override default css for input:focus */
 {
-    border: 1px solid #cccccc;
-    box-shadow: none;
+    border: 1px solid #cccccc !important;
+    box-shadow: none !important;
 }
 
 input.home-search-button
 {
     margin: 0;
-
     display: inline;
-    border: 0;
-    position: relative;
-    left: 10px;
-    top: 15px;
+    border: none !important;
+    position: absolute;
+    z-index: 10;
+    right: 8px; top: 8px;
+    color: transparent;
+    background: transparent url("http://omnio.us/test/bia/kb/img/search-icon.png") no-repeat !important;
+    width: 44px !important;
+    height: 42px !important;
 }
 
-input.home-search-field::-webkit-input-placeholder, input.home-search-field:-ms-input-placeholder, input.home-search-field:-moz-placeholder
+input.home-search-field:-webkit-input-placeholder, input.home-search-field:-ms-input-placeholder, input.home-search-field:-moz-placeholder
 {
     font-size: 18px;
     font-family: ProximaNova, Arial;
@@ -75,6 +73,20 @@ input.home-search-field::-webkit-input-placeholder, input.home-search-field:-ms-
     text-decoration: underline;
 }
 
+#featured-article-wrapper{
+    padding: auto !important;
+    width: 100% !important;
+}
+#featured-article{
+    background-color: #E6E7E8 !important;
+    border: 1px solid #6D6E71 !important;
+    padding: 20px 3% 5px !important;
+    width: 72%;
+    margin: 0 4.5% 80px;
+
+    position: relative;
+    left: 10%;
+}
 .featured-article-title
 {
     font-weight: bold;
@@ -264,19 +276,21 @@ margin-left:5px;
 }
 
 #search-field2 {
-    width:564px;
-    margin-right:13px;
-    border-color:#ccc;
-    font-size:18px;
-    margin-top:10px;
+    /*width:564px;*/
+    /*margin-right:13px;*/
+    /*border-color:#ccc;*/
+    /*font-size:18px;*/
+    /*margin-top:10px;*/
+    display: none;
 }
 
 #search-button2 {
-    width:25px;
-    padding:0;
-    font-size:10px;
-    background-color:#cd202c;
-    color:white;
+    /*width:25px;*/
+    /*padding:0;*/
+    /*font-size:10px;*/
+    /*background-color:#cd202c;*/
+    /*color:white;*/
+    display: none;
 }
 
 #search-field2::-webkit-input-placeholder {
@@ -304,7 +318,6 @@ margin-left:5px;
     width:175px;
     max-height:495px;
     float:left;
-    display:block;
     border:1px solid #9e9e9e;
     border-left:0px;
     border-top:50px solid #cd202c;
@@ -345,4 +358,57 @@ margin-left:5px;
     font-variant:small-caps;
     font-weight:600;
     color:#555;
+}
+
+/*.content{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    padding: 20px 0;
+}*/
+#welcome-text h1,
+#welcome-text p{
+    font-size: 14px;
+    text-align: center;
+    color: #6e6d71;
+}
+#welcome-text h1{
+    display: block;
+    color: #D9272E;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#home-search form{
+    position: relative;
+}
+.columbia-page-home #home-search{
+    background: #ccc url("http://omnio.us/test/bia/kb/img/facet-art.png") center 0 no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+#home-search{
+    background: #ccc url("http://omnio.us/test/bia/kb/img/hex-bk_35o.png") center 0 no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 50px 10%;
+}
+.elm-content-container{
+    padding: 0 !important;
+}
+
+@media (min-width: 830px) {
+    #home-search{
+        padding: 100px 10%;
+    }
+    .columbia-page-home input.home-search-field{
+        padding: 2em 12% 2em 4%;
+    }
+    input.home-search-field{
+        padding: 2em 12% 2em 3%;
+        top: 33%;
+    }
+    .columbia-page-home input.home-search-button{
+        right: 3%; top: 20%;
+    }
+
 }
