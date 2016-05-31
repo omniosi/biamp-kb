@@ -90,7 +90,8 @@ a {
 .ui-widget-content a:visited,
 .nav a:visited,
 a:visited {
-  color: #E6E7E8;
+  /*color: #E6E7E8;*/
+  color: #000;
 }
 .ui-widget-content a:hover,
 .nav a:hover,

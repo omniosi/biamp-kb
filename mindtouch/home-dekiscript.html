@@ -2,7 +2,6 @@
     <form ('action')="/Special:Search">
         <input name="type" type="hidden" value="wiki" />
         <input class="home-search-field" name="search" ('placeholder')="Search Biamp Technical Support" type="text" />
-        <!-- <input class="home-search-button" type="image" src="/@api/deki/files/894/home-search2.png" /> -->
         <input class="home-search-button" type="button" />
     </form>
     if (!user.anonymous) {
@@ -20,38 +19,40 @@
 if (!user.anonymous) {
     <br />
 }
-<div id="icon-wrapper" style="width:100%;">
-    <div id="icons" style="display: table; margin: 0 auto; padding-top: 70px;">
-        <div style="float: left;padding-right: 30px;"><a id="audia" href="/Audia-Nexia">" "</a></div>
-        <div style="float: left;padding-right: 30px;"><a id="tesira" href="/Tesira">" "</a></div>
-        <div style="float: left;padding-right: 40px;"><a id="vocia" href="/Vocia">" "</a></div>
-if (!user.anonymous) {
-        <div style="float: left; padding-right: 30px;"><a id="devio" href="/Devio">" "</a></div>
-}
-        <div style="float: left;padding-right: 40px;"><img src="/@api/deki/files/912/icon_divider.png" width="3" height="62" border="0" /></div>
-        <div style="float: left;padding-right: 30px;"><a id="voip" href="/VoIP">" "</a></div>
-        <div style="float: left;padding-right: 30px;"><a id="general" href="/General">" "</a></div>
-        <div style="float: left;padding-right: 30px;"><a id="videos" href="/Videos">" "</a></div>
-
-if (!user.anonymous) {
-        <div style="float: left;"><a id="internal" href="/Internal">" "</a></div>
-}
-    </div>
-<div style="clear:both;"></div>
-</div>
 
 
-<div id="welcome-text" class="content">
+<div id="welcome-text" class="content main">
     <h1>"Welcome to Cornerstone, Biamp’s online technical support knowledge base."</h1>
     <p>"This site is devoted to in-depth technical information on Biamp products. Please search for the information you need, or start browsing through our articles by selecting a category below."</p>
 </div>
 
 
+<div class="nav-bar">
+    <ul class="nav one">
+        <li class="line"></li>
+        <li class="an"><a href="/Audia-Nexia">"Audia Nexia"</a></li>
+        <li class="te"><a href="/Tesira">"Tesira"</a></li>
+        <li class="vo"><a href="/Vocia">"Vocia"</a></li>
+if (!user.anonymous) {
+        <li class="de"><a href="/Devio">"Devio"</a></li>
+}
+    </ul>
+    <ul class="nav two">
+        <li class="line"></li>
+        <li class="vi"><a href="/VoIP">"VoIP"</a></li>
+        <li class="ge"><a href="/General">"General"</a></li>
+        <li class="vd"><a href="/Video">"Video"</a></li>
+
+if (!user.anonymous) {
+        <li class="in"><a href="/Internal"></a></li>
+}
+</ul>
+    </div>
+
 template("Biamp/Featured article", {
     path:"/Tesira/Control/Oreno-Getting_started",
     description:"Oreno is one of Biamp's newest products, allowing users to control a Tesira system from a computer, tablet, smartphone, or any device that has a web browser. This article introduces some new Oreno concepts and demonstrates how Oreno Manager gets installed as a web server."
     });
-
 
 
 <div id="home-quick-links">
