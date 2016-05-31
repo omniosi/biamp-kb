@@ -70,6 +70,9 @@ ul{ list-style: none; }
         padding-left: 5px;
         text-decoration: none;
         cursor: pointer;
+        margin: 0;
+        display: inline-block;
+        text-transform: uppercase;
     }
 
     .link
@@ -93,7 +96,7 @@ ul{ list-style: none; }
     #featured-article{
         background-color: #E6E7E8 !important;
         border: 1px solid #6D6E71 !important;
-        padding: 20px 3% 5px !important;
+        padding: 20px 3% !important;
         width: 72%;
         margin: 0 4.5% 80px;
 
@@ -108,6 +111,8 @@ ul{ list-style: none; }
         padding-left: 5px;
         text-decoration: none;
         cursor: pointer;
+        display: inline-block;
+        margin: 0;
     }
 
     .featured-article-content
@@ -115,6 +120,7 @@ ul{ list-style: none; }
         color:#000000;
         padding-left: 5px;
         padding-right: 5px;
+        padding-top: 0.75em;
     }
 
     .featured-link:hover
@@ -400,12 +406,12 @@ ul{ list-style: none; }
         position: relative;
     }
     .columbia-page-home #home-search{
-        background: #ccc url("http://omnio.us/test/bia/kb/img/facet-art.png") center 0 no-repeat;
+        background: #ccc url("/@api/deki/files/2275/facet-art.png") center 0 no-repeat;
         -webkit-background-size: cover;
         background-size: cover;
     }
     #home-search{
-        background: #ccc url("http://omnio.us/test/bia/kb/img/hex-bk_35o.png") center 0 no-repeat;
+        background: #ccc url("/@api/deki/files/2260/hex-bk_35o.png") center 0 no-repeat;
         -webkit-background-size: cover;
         background-size: cover;
         padding: 50px 10%;
@@ -423,7 +429,7 @@ ul{ list-style: none; }
       padding: 1em 10%;
       color: #D9272E;
       background-color: #E6E7E8;
-      background-image: url(http://omnio.us/test/bia/kb/img/icon_general.png);
+      background-image: url(/@api/deki/files/2276/icon_general.png);
       background-repeat: no-repeat;
       background-position: 90% 50%;
       -webkit-background-size: 2em;
@@ -431,12 +437,12 @@ ul{ list-style: none; }
       border-bottom: 1px solid #D9272E;
       display: block;
     }
-    .nav li.an a{ background-image: url(http://omnio.us/test/bia/kb/img/icon_audia-nexia.png); -webkit-background-size: 4em; background-size: 4em; }
-    .nav li.te a{ background-image: url(http://omnio.us/test/bia/kb/img/icon_tesira.png); }
-    .nav li.vo a{ background-image: url(http://omnio.us/test/bia/kb/img/icon_vocia.png); }
-    .nav li.de a{ background-image: url(http://omnio.us/test/bia/kb/img/icon_devio.png); }
-    .nav li.vi a{ background-image: url(http://omnio.us/test/bia/kb/img/icon_voip.png); }
-    .nav li.vd a{ background-image: url(http://omnio.us/test/bia/kb/img/icon_videos.png); }
+    .nav li.an a{ background-image: url(/@api/deki/files/2261/icon_audia-nexia.png); -webkit-background-size: 4em; background-size: 4em; }
+    .nav li.te a{ background-image: url(/@api/deki/files/2267/icon_tesira.png); }
+    .nav li.vo a{ background-image: url(/@api/deki/files/2270/icon_vocia.png); }
+    .nav li.de a{ background-image: url(/@api/deki/files/2262/icon_devio.png); }
+    .nav li.vi a{ background-image: url(/@api/deki/files/2271/icon_voip.png); }
+    .nav li.vd a{ background-image: url(/@api/deki/files/2268/icon_videos.png); }
     .nav li.line a { display: none }
 
       .main{
@@ -550,7 +556,7 @@ ul{ list-style: none; }
           .nav li.line:after,
           .nav li.line:before{
             content: "";
-            background: url(http://omnio.us/test/bia/kb/img/left-arrow.png) no-repeat;
+            background: url(/@api/deki/files/2272/left-arrow.png) no-repeat;
             width: 4px;
             height: 8px;
             position: absolute;
@@ -558,7 +564,7 @@ ul{ list-style: none; }
             left: 0;
           }
           .nav li.line:after{
-            background: url(http://omnio.us/test/bia/kb/img/right-arrow.png) no-repeat;
+            background: url(/@api/deki/files/2274/right-arrow.png) no-repeat;
             left: auto;
             right: 0;
           }
