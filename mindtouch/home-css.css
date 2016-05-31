@@ -97,11 +97,11 @@ ul{ list-style: none; }
         background-color: #E6E7E8 !important;
         border: 1px solid #6D6E71 !important;
         padding: 20px 3% !important;
-        width: 72%;
-        margin: 0 4.5% 80px;
-
+        width: 94%;
+        margin: 0;
         position: relative;
-        left: 10%;
+        /*left: 10%;*/
+        left: 0;
     }
     .featured-article-title
     {
@@ -445,12 +445,7 @@ ul{ list-style: none; }
     .nav li.vd a{ background-image: url(/@api/deki/files/2268/icon_videos.png); }
     .nav li.line a { display: none }
 
-      .main{
-        position: relative;
-        /*top: 120px;*/
-        /*top: 160px;*/
-        top: 150px;
-      }
+
       .secondary .main{
         top: 0;
         padding-bottom: 40px;
@@ -472,7 +467,12 @@ ul{ list-style: none; }
         }
 
     @media (min-width: 830px) {
-        #home-search{
+       .main{
+          position: relative;
+          /*top: 120px;*/
+          top: 160px;
+        }
+       #home-search{
             padding: 100px 10%;
         }
         .columbia-page-home input.home-search-field{
@@ -489,8 +489,14 @@ ul{ list-style: none; }
             position: relative;
             padding: 40px 10% 35px;
             /*top: -150px;*/
-            top: -95px;
+            top: -325px;
           }
+          #featured-article-wrapper{
+            padding: 0 !important;
+            position: relative;
+            top: 200px;
+          }
+          .featured-article-content,
           .nav-bar .content{
             padding: 0;
             width: 80%;
@@ -568,6 +574,11 @@ ul{ list-style: none; }
             left: auto;
             right: 0;
           }
+          #featured-article{
+            width: 72%;
+            margin: 0 14% 80px;
+          }
+
 
     }
     @media (min-width: 83em){

@@ -16,15 +16,18 @@
         </form>
     }
 </div>
-if (!user.anonymous) {
-    <br />
-}
 
 
 <div id="welcome-text" class="content main">
     <h1>"Welcome to Cornerstone, Biamp’s online technical support knowledge base."</h1>
     <p>"This site is devoted to in-depth technical information on Biamp products. Please search for the information you need, or start browsing through our articles by selecting a category below."</p>
 </div>
+
+
+template("Biamp/Featured article", {
+    path:"/Tesira/Control/Oreno-Getting_started",
+    description:"Oreno is one of Biamp's newest products, allowing users to control a Tesira system from a computer, tablet, smartphone, or any device that has a web browser. This article introduces some new Oreno concepts and demonstrates how Oreno Manager gets installed as a web server."
+    });
 
 
 <div class="nav-bar">
@@ -48,12 +51,6 @@ if (!user.anonymous) {
 }
 </ul>
     </div>
-
-template("Biamp/Featured article", {
-    path:"/Tesira/Control/Oreno-Getting_started",
-    description:"Oreno is one of Biamp's newest products, allowing users to control a Tesira system from a computer, tablet, smartphone, or any device that has a web browser. This article introduces some new Oreno concepts and demonstrates how Oreno Manager gets installed as a web server."
-    });
-
 
 <div id="home-quick-links">
     <div id="quick-links-heading">"Quick Links"</div>
