@@ -1,0 +1,70 @@
+/* Site footer */
+.site-footer {
+  padding: 20px 0;
+  background: #D9272E;
+  color: white;
+  font-size: 14px;
+  list-style: none;
+  padding: 1em 35px;
+  margin: 0;
+}
+.site-footer ul{
+  text-decoration: none;
+}
+.site-footer li{
+  /*text-align: center;*/
+  font-size: 16px;
+}
+.site-footer li.name{
+  margin-bottom: 0.5em;
+}
+.site-footer a:hover,
+.site-footer a{
+  color:white;
+}
+.site-footer a:visited{
+  color:pink;
+  color:rgba(255,255,255,0.5);
+}
+a:hover{text-decoration: underline;}
+ .footer-nav .name{
+  font-weight: bold;
+}
+.elm-footer-siteinfo-nav{display: none;}
+
+
+/* --- desktop styles --- */
+@media (min-width: 830px) {
+  .copyright{
+    display: inline-block;
+    font-size: 8px;
+    float: left;
+    position: relative;
+    top: 6px;
+  }
+  .site-footer{
+    padding: 1% 5% 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+ }
+ .footer-nav{
+    /*position: relative;*/
+    /*float: right;*/
+    margin: 0;
+    text-align: right;
+ }
+ .footer-nav li{
+    display: inline-block;
+    padding: 0 2%;
+    border-right: 1px solid #fff;
+    font-size: 14px;
+    margin: 0;
+ }
+ .footer-nav li:last-child{
+    border-right: none;
+    padding-right: 0;
+ }
+
+}

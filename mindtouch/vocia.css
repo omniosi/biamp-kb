@@ -1,0 +1,109 @@
+.search-nav{
+	background: url(@api/deki/files/2260/hex-bk_35o.png) center 0 no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 50px 10%;
+	width: 100%;
+}
+.search-nav .title{
+	color: #D9272E;
+	background-repeat: no-repeat;
+	padding: 0.125em 0 0.5em 70px;
+	margin-left: 10%;
+	text-transform: uppercase;
+	margin: 0 auto;
+	width: 180px;
+	display: inline-block !important;
+	font-size: 32px;
+}
+.search-nav .title.vocia{
+	background: url(@api/deki/files/2269/icon_vocia_h.png) no-repeat;
+}
+.mt-content-container{
+	width: 100% !important;
+	padding: 0 !important;
+}
+.elm-content-container{
+	min-width: 100% !important;
+	max-width: 100% !important;
+	padding: 0 !important;
+}
+#searchbox{
+	position: relative;
+}
+.home-search-field,
+#search{
+	padding: 1.25em 15% 1.25em 5%;
+	position: relative;
+	top: 25%;
+	font: italic 15px "Helvetica Neue Medium Italic", Arial, sans-serif;
+	background: #fff;
+	width: 100%;
+	border: none;
+	border-radius: 0;
+}
+.home-search-button{
+	background: #fff url(@api/deki/files/652/search-icon.png) 95% 50% no-repeat !important;
+	width: 55px !important;
+	height: 100%;
+	height: 99%;
+	border: none !important;
+	position: absolute;
+	right: 0;
+}
+.search-nav .social{
+	margin: 0 auto;
+	width: 145px;
+	padding-top: 1em;
+}
+.search-nav .social li{
+	display: inline-block;
+	width: 32px;
+	height: 37px;
+	background-repeat: no-repeat;
+	color: transparent;
+}
+
+@media (min-width: 830px) {
+	.search-nav{
+		padding: 1em 5% 1em 10%;
+	}
+	.search-nav .second #searchnav,
+	.search-nav .second .social,
+	.search-nav .second,
+	.search-nav .title{
+		display: inline-block;
+		vertical-align: top;
+	}
+	.search-nav .title{
+		margin: 0;
+		padding: 1em 0 1em 70px;
+	}
+	.search-nav .title.vocia{
+		background: url(@api/deki/files/2269/icon_vocia_h.png) 0 50% no-repeat;
+	}
+	.second{
+		position: absolute;
+		right: 5%;
+		width: 400px;
+		padding: 1em 0;
+	}
+	#searchbox{
+		height: 235px;
+		height: auto;
+		float: right;
+		position: relative;
+		top: 12px;
+	}
+	.home-search-field,
+	#search{
+		padding: 2em 12% 2em 3%;
+		top: 33%;
+		width: auto;
+		padding: 1.25em 50px 1.25em 15px;
+	}
+	.search-nav .social{
+		width: auto;
+		float: right;
+		padding-top: 1.25em;
+}
