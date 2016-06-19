@@ -11,8 +11,8 @@
 
 /* --- desktop styles --- */
 @media (min-width: 830px) {
-
   .mt-logo{
     padding: 1.5em 5%;
   }
 }
+@media (min-width: 83em) { .elm-content-container{ max-width: 100%; min-width: 100%; } }

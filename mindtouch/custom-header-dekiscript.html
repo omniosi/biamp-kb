@@ -23,14 +23,7 @@ $(document).ready(function () {
     $('input[name=path]:not(\".no-searchscope-limit\")').val(''); //force search to always be global, not dependent on the page you're searching from
 
     //this style overrides the standard logo on all pages
-    $('.mt-logo').html('
-        <a href=\"/\" title=\"Cornerstone\">
-            <img class=\"csl\" alt=\"Cornerstone\" src=\"/@api/deki/files/612/cornerstone_logo.png\" title=\"Cornerstone\" />
-        </a>
-        <a href=\"http://www.biamp.com/\" target=\"_blank\" title=\"Biamp Systems\">
-            <img class=\"bsl\" alt=\"Biamp Systems\" src=\"/@api/deki/files/613/biamp_logo.png\" title=\"Biamp Systems\" />
-        </a>
-    ');
+    $('.mt-logo').html('<a href=\"/\" title=\"Cornerstone\"><img class=\"csl\" alt=\"Cornerstone\" src=\"/@api/deki/files/612/cornerstone_logo.png\" title=\"Cornerstone\" /></a><a href=\"http://www.biamp.com/\" target=\"_blank\" title=\"Biamp Systems\"><img class=\"bsl\" alt=\"Biamp Systems\" src=\"/@api/deki/files/613/biamp_logo.png\" title=\"Biamp Systems\" /></a>');
 
     //this style overrides the poweredBy information in the lower right portion of the footer
     $('.poweredBy').html('Contact us at +1 503.641.7287 or <a href=\"mailto:support@biamp.com\">support@biamp.com</a>');

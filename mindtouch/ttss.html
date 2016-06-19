@@ -1,0 +1,57 @@
+template("Biamp/HideTOC", {});
+<div class="search-nav">
+	<h1 class="title vocia">"Vocia"</h1>
+	<div class="second">
+	   <form id="searchbox" ('action')="/Special:Search">
+	       <input name="type" type="hidden" value="wiki" />
+	       <input class="home-search-field" name="search" ('placeholder')="How can we help?" type="text" />
+	       <input class="home-search-button" type="button" />
+	   </form>
+		<ul class="social">
+			<li class="twitter"><a href="#" target="_blank">"twitter"</a></li>
+			<li class="linkedin"><a href="#" target="_blank">"linkedin"</a></li>
+			<li class="facebook"><a href="#" target="_blank">"facebook"</a></li>
+			<li class="googleplus"><a href="#" target="_blank">"googleplus"</a></li>
+		</ul>
+	</div>
+</div>
+<div id="nav" class="main">
+	<ul>
+		<li id="tab-guide-contents" class="header selected">
+			<h3>"Articles > TTS–1 > Text-To-Speech Sequences"</h3>
+		</li>
+		<li>
+			<ul class="cont">
+				<li>
+					<h4>"Text-To-Speech Sequences"</h4>
+					<p>"The Text-to-Speech engine inside the Vocia TTS-1 is able to convert text elements in a multitude of languages using various voice fonts as well as being able to incorporate pre-recorded message elements all within a single paging event. Once the paging event has been configured, announcements are able to be accessed and modified via a web browser interface. This makes the TTS-1 an exceptionally valuable announcement tool in a Vocia system, especially for those that may reside in unattended locations.
+This article explains the process required to set up an audible announcement on a system with a TTS-1 or TTS-1nc."</p>
+				</li>
+				<li>
+					<h4>"Configuring a sequence"</h4>
+					<ol>
+						<li><p>"Add an MS-1 to the Vocia project and configure it for IP communication."</p></li>
+						<li><p>"Add a TTS-1 to the project. Right click on the TTS-1 in the main layout and select IP Configuration. Enter the desired IP address, subnet mask and gateway information."</p>
+							<img src="/@api/deki/files/704/clipboard_1380605443597.png" alt="" />
+						</li>
+						<li><p>"Configure a VTP User in the Universe properties with a User Name and Password. Note that the User Name and Password are case sensitive."</p>
+							<img src="/@api/deki/files/705/clipboard_1380605492513.png" alt="" />
+						</li>
+						<li><p>"Ensure a voice font has been installed on the TTS-1 by opening TTS-1 Voice Management from the Tools menu. Although a complete list of voices are shown and selectable in the World properties > TTS-1 Sequences > Voice tab, you can only use an installed voice font."</p>
+							<img src="/@api/deki/files/706/clipboard_1380605545693.png" alt="" />
+						</li>
+						<li><p>"Open the World properties and select the TTS-1 Sequences tab. Create a new sequence. When naming the sequences, note that the web interface will display the sequence list in alphabetical order. By placing a number before the name you can ensure the most critical or frequently used ones are displayed at the top of the list."</p>
+						<img src="/@api/deki/files/707/clipboard_1380605601600.png" alt="" /></li>
+						<li><p>"Once a sequence has been created the elements for that sequence must be defined. Sequences can be made up of static text, dynamic text, drop-down lists and Pre-Recorded Message elements. To configure a drop down menu for example firstly select the 'A' icon to add a Text Element to the Sequence. The Text Element dialog will open. Select the Drop Down List checkbox and enter the desired menu items in the Enter Text field. Each line represents a new selection in the list."</p>
+						<img src="/@api/deki/files/708/clipboard_1380605706965.png" alt=""/>
+						<p>"When creating a text element, additional customization for the text elements can be configured under the Text Options subheading. The Text Mode dropdown box can be set to Normal, Numeric, Alpha and Alphanumeric. This setting applies to the entire Text Element (each sequence can be made up of multiple text elements) and is used to determine the type of text that can be entered in to the web interface by the end user."</p>
+						<p>"The maximum text length is set by default to the highest allowable setting of 250 characters per message element (again, multiple elements are able to exist in each Sequence). This character limit can be restricted to control the length of text that can be entered in the TTS-1 Web Interface. The total Pre-Recorded Message element of any Sequence is limited to a two minute maximum, however text elements are not included as part of this limit."</p>
+						<p>"The Read Only checkbox is used to determine the status of the text element when presented in the TTS-1 Web Interface. By making an Element ‘read only’ it means that the client will be unable to adjust the text from within the web interface."</p></li>
+						<li><p>"Allocate the Text Element to the designated Zone(s) and assign the voice font to be used."</p></li>
+						<li><p>"Send the configuration to the system. Now you're able to navigate to the IP address of the TTS-1 using any standard web browser to access to the web interface."</p></li>
+					</ol>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
