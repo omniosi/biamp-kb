@@ -1,0 +1,33 @@
+/***************************************************
+
+Featured article template
+Makes it easier to change the featured article on the front page
+
+USAGE:
+
+template("Biamp/Featured article", {
+    path:"Audia-Nexia/Miscellaneous/Updating_firmware_on_an_Audia_or_Nexia",
+    description:"Biamp periodically releases firmware updates for its products, in order to add new features and make the products work better. Read this article for a step-by-step guide to updating firmware on an Audia or Nexia processor."
+});
+
+PARAMETERS:
+
+path : str
+    Path to the article you want to feature.  Include everything in the URL after "http://support.biamp.com/"
+
+description : str
+    The description string that will appear in the featured article area, introducing the article.
+
+***********************************************************/
+var featuredPage = wiki.getpage($path ?? $1 ?? "/");
+var description = $description ?? $2 ?? "";
+
+<div id="featured-article-wrapper">
+	<div id="featured-article">
+		<a href=(featuredPage.uri) class='featured-link'>
+			<h1 class='link link_title'>"Featured Article"</h1>
+			<h2 class='featured-article-title'>(featuredPage.title)</h2>
+			<div class='featured-article-content'></div>
+		</a>
+	</div>
+</div>

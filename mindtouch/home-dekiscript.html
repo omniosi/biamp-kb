@@ -16,42 +16,29 @@
         </form>
     }
 </div>
-
-
 <div id="welcome-text" class="content main">
     <h1>"Welcome to Cornerstone, Biamp’s online technical support knowledge base."</h1>
     <p>"This site is devoted to in-depth technical information on Biamp products. Please search for the information you need, or start browsing through our articles by selecting a category below."</p>
 </div>
-
-
 template("Biamp/Featured article", {
     path:"/Tesira/Control/Oreno-Getting_started",
     description:"Oreno is one of Biamp's newest products, allowing users to control a Tesira system from a computer, tablet, smartphone, or any device that has a web browser. This article introduces some new Oreno concepts and demonstrates how Oreno Manager gets installed as a web server."
     });
-
-
 <div class="nav-bar">
     <ul class="nav one">
         <li class="line"></li>
         <li class="an"><a href="/Audia-Nexia">"Audia Nexia"</a></li>
         <li class="te"><a href="/Tesira">"Tesira"</a></li>
         <li class="vo"><a href="/Vocia">"Vocia"</a></li>
-if (!user.anonymous) {
         <li class="de"><a href="/Devio">"Devio"</a></li>
-}
     </ul>
     <ul class="nav two">
         <li class="line"></li>
         <li class="vi"><a href="/VoIP">"VoIP"</a></li>
         <li class="ge"><a href="/General">"General"</a></li>
         <li class="vd"><a href="/Video">"Video"</a></li>
-
-if (!user.anonymous) {
-        <li class="in"><a href="/Internal"></a></li>
-}
-</ul>
-    </div>
-
+    </ul>
+</div>
 <div id="home-quick-links">
     <div id="quick-links-heading">"Quick Links"</div>
     <ul id="quick-links-list">

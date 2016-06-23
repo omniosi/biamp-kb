@@ -11,7 +11,7 @@ html{ box-sizing: border-box; }
 
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+dl, dd, ol, li, ul, figure {
   margin: 0;
   padding: 0; }
 
@@ -89,15 +89,26 @@ ul{ list-style: none; }
         text-decoration: underline;
     }
 
+    .content{
+      position: relative;
+      width: 80%;
+      left: 10%;
+      padding: 20px 0;
+    }
     #featured-article-wrapper{
-        padding: auto !important;
+      /*padding-left: 17px;*/
+      /*padding-top: 35px;*/
+      padding-top: 0;
+      /*padding-bottom: 30px;*/
+        /*padding: auto !important;*/
+      padding: 0 10% 1em;
         width: 100% !important;
     }
     #featured-article{
         background-color: #E6E7E8 !important;
         border: 1px solid #6D6E71 !important;
         padding: 20px 3% !important;
-        width: 94%;
+        /*width: 94%;*/
         margin: 0;
         position: relative;
         /*left: 10%;*/
@@ -392,9 +403,11 @@ ul{ list-style: none; }
     }*/
     #welcome-text h1,
     #welcome-text p{
-        font-size: 14px;
-        text-align: center;
+        font-size: 16px;
+        text-align: left;
+        line-height: 1.5;
         color: #6e6d71;
+        margin-bottom: 15px;
     }
     #welcome-text h1{
         display: block;
@@ -419,11 +432,17 @@ ul{ list-style: none; }
     .elm-content-container{
         padding: 0 !important;
     }
+    .elm-header-user-nav{
+      /*display: none;*/
+    }
     .nav{
       background-color: #E6E7E8;
       margin: 0;
       padding: 0;
       list-style: none;
+    }
+    .nav li{
+      margin: 0;
     }
     .nav li a{
       padding: 1em 10%;
@@ -436,6 +455,7 @@ ul{ list-style: none; }
       background-size: 2em;
       border-bottom: 1px solid #D9272E;
       display: block;
+      text-transform: uppercase;
     }
     .nav li.an a{ background-image: url(/@api/deki/files/2261/icon_audia-nexia.png); -webkit-background-size: 4em; background-size: 4em; }
     .nav li.te a{ background-image: url(/@api/deki/files/2267/icon_tesira.png); }
@@ -445,6 +465,9 @@ ul{ list-style: none; }
     .nav li.vd a{ background-image: url(/@api/deki/files/2268/icon_videos.png); }
     .nav li.line a { display: none }
 
+    .copyright{
+      display: none;
+    }
 
       .secondary .main{
         top: 0;
@@ -470,7 +493,8 @@ ul{ list-style: none; }
        .main{
           position: relative;
           /*top: 120px;*/
-          top: 160px;
+          /*top: 160px;*/
+          top: 180px;
         }
        #home-search{
             padding: 100px 10%;
@@ -489,7 +513,8 @@ ul{ list-style: none; }
             position: relative;
             padding: 40px 10% 35px;
             /*top: -150px;*/
-            top: -325px;
+            /*top: -325px;*/
+            top: -360px;
           }
           #featured-article-wrapper{
             padding: 0 !important;
@@ -512,25 +537,37 @@ ul{ list-style: none; }
 
           .nav{
             display: inline-block;
+            vertical-align: top;
             font-size: 11px;
             border: none;
             position: relative;
             width: 60%;
-            /*padding-left: 3%;*/
+            padding-left: 3%;
           }
           .nav.two{width: 35%;position: relative;float: right;}
           .nav li{
             display: inline-block;
-            /*margin-right: 11%;*/
-            margin: 0 7.5%;
+            vertical-align: top;
+            margin-right: 11%;
+            /*margin: 0 7.5%;*/
+            margin: 0 !important;
+          }
+          .nav.one li{
+            /*width: 25%;*/
+            width: 24%;
+          }
+          .nav.two li{
+            /*width: 33%;*/
+            width: 32%;
           }
           .nav:last-child li{
             /*margin-right: 0;*/
             margin: 0 6%;
           }
           .nav li a{
-            display: inline-block;
-            margin: 0 4%;
+            /*display: inline-block;*/
+            /*margin: 0 4%;*/
+            margin: 0 auto;
             padding: 6em 0 0;
             background-position: 50% 0;
             -webkit-background-size: auto;
@@ -583,6 +620,14 @@ ul{ list-style: none; }
             width: 72%;
             margin: 0 14% 80px;
           }
+          #welcome-text h1,
+          #welcome-text p{
+              font-size: 14px;
+              text-align: center;
+          }
+        .copyright{
+          display: inline-block;
+        }
 
 
     }
