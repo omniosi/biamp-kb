@@ -1,0 +1,36 @@
+On June 20, 2016 at 2:23:02 PM PDT, Scott Wieser <Scott.Wieser@biamp.com> wrote:
+I changed the site settings so that it can be viewed without logging in.  This should allow Patrick to see it easily, but it also allows us to see exactly what it will look like to users that are not logged in to the site.  The site is starting to look great, here are a few notes after taking a quick look at it in the logged-out state:
+
+✔ I like the Cornerstone logo in the top left, although it’s a bit small.  The text underneath it is barely readable.  If we make it bigger, we may also need to make the Biamp logo on the opposite side bigger to balance it out. @done (16-06-27 01:32)
+✔ When logged out, there is a bar right below the logos that has a “How can we help you?” field as well as some login fields.  I think the page would look better if that entire bar were hidden.  However, the Biamp folks will still need a way to login to the site.  On the old site, the way I solved this problem was to add a small “Biamp login” link to the footer of the page.  The link takes you to /Special:Userlogin . @done (16-06-28 01:31)
+✔ The text inside the search field (“Search Biamp Technical Support”) is quite small, compared to the size of the field. @done (16-06-28 01:31)
+
+In the area with the hexagon category logos:
+✔ The logo for the Videos section doesn’t appear to show up when you’re logged out of the site.  Also, the text underneath should be “Videos” instead of “Video”. @done (16-06-27 01:40)
+✔ There is no Devio category when you’re logged out. @done (16-06-27 01:40)
+
+For the landing page (/Vocia):
+✔ There are some extraneous elements on this page, like the “How can we help you?” and username/password login fields, the “Last updated” text, and a weird warning about “Category may contain orphaned non-guide or non-category pages…”.  Those can all go away. @done (16-06-28 02:01)
+☐ There is a share button on the left that allows you to share the page to social media.  However, there are individual social media hexagon icons as well.  So, the share button can probably go away. - ? I don't see this.
+
+On the article page (/Vocia/TTS-1/Text-to-Speech_Sequences):
+✔ The table of contents appears to be floating in a strange area towards the top right of the page.  We’ll need to think about the best place to locate that. @done (16-06-30 00:26)
+- There are some minor font issues to correct, including:
+✔ The page title should be larger. Currently it’s the same size as a section heading. @done (16-06-30 01:12)
+✔ The article content shouldn’t be in italics. @done (16-06-30 00:34)
+☐ The old site has a lightbox library that allows images to be clicked and viewed at full-resolution.  This hasn’t been installed on the new site yet.  I can probably take care of moving that over at some point.  But for now, images aren’t clickable. - do i need to make these clickable eleemnts or will the lightbox library take care of this?
+
+- There may be some missing elements on this page, compared to the old site, including:
+☐ Last modified date
+☐ Related articles
+☐ Tags
+☐ Classifications
+☐ Export page to PDF button
+
+That’s all I’ve got for now.
+
+Thanks,
+Scott Wieser  •  Applications Engineering Manager, North America
+Biamp Systems  •  9300 SW Gemini Drive, Beaverton, OR 97008
+www.biamp.com  •  support.biamp.com
+office: +1.503.641.7287  •  tech support: 877.242.6796 (877.BIAMP.XO)  •  direct: +1.503.718.9160

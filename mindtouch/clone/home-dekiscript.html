@@ -1,0 +1,39 @@
+<div id="home-search">
+    <form ('action')="/Special:Search">
+        <input name="type" type="hidden" value="wiki" />
+        <input class="home-search-field" name="search" ('placeholder')="How can we help you?" type="text" />
+        <input class="home-search-button" type="button" />
+    </form>
+    if (!user.anonymous) {
+        <form action="/Special:Search">
+            <input name="qid" id="mt-qid-skin" type="hidden" value="" />
+            <input name="path" id="mt-search-path" class="no-searchscope-limit" type="hidden" value="Internal/Internal_articles" />
+            <input name="fpid" id="mt-search-filter-id" type="hidden" value="" />
+            <input name="fpth" id="mt-search-filter-path" type="hidden" value="" />
+            <input name="type" id="mt-search-type" type="hidden" value="wiki" />
+        </form>
+    }
+</div>
+<div id="welcome-text" class="content main">
+    <h1>"Welcome to Cornerstone, Biamp’s online technical support knowledge base."</h1>
+    <p>"This site is devoted to in-depth technical information on Biamp products. Please search for the information you need, or start browsing through our articles by selecting a category below."</p>
+</div>
+template("Biamp/Featured article", {
+    path:"/Tesira/Control/Oreno-Getting_started",
+    description:"Oreno is one of Biamp's newest products, allowing users to control a Tesira system from a computer, tablet, smartphone, or any device that has a web browser. This article introduces some new Oreno concepts and demonstrates how Oreno Manager gets installed as a web server."
+    });
+<div class="nav-bar">
+    <ul class="nav one">
+        <li class="line"></li>
+        <li class="an"><a href="/Audia-Nexia">"Audia Nexia"</a></li>
+        <li class="te"><a href="/Tesira">"Tesira"</a></li>
+        <li class="vo"><a href="/Vocia">"Vocia"</a></li>
+        <li class="de"><a href="/Devio">"Devio"</a></li>
+    </ul>
+    <ul class="nav two">
+        <li class="line"></li>
+        <li class="vi"><a href="/VoIP">"VoIP"</a></li>
+        <li class="ge"><a href="/General">"General"</a></li>
+        <li class="vd"><a href="/Videos">"Videos"</a></li>
+    </ul>
+</div>

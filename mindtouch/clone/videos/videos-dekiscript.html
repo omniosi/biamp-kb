@@ -1,0 +1,187 @@
+<div class="search-nav">
+	<h1 class="title videos">"Videos"</h1>
+	<div class="second">
+	   <form id="searchbox" ('action')="/Special:Search">
+	       <input name="type" type="hidden" value="wiki" />
+	       <input class="home-search-field" name="search" ('placeholder')="How can we help?" type="text" />
+	       <input class="home-search-button" type="button" />
+	   </form>
+		<ul class="social">
+			<li class="twitter">"twitter"</li>
+			<li class="linkedin">"linkedin"</li>
+			<li class="facebook">"facebook"</li>
+			<li class="googleplus">"googleplus"</li>
+		</ul>
+	</div>
+</div>
+
+
+/***
+USAGE:
+
+Guide()
+Show a content guide that organizes the tree rooted at the guide pages into types of pages (topics, how-to, and reference).
+
+***/
+
+
+var customTabs = $tabs ?? nil;
+
+//disable Reference and HowTo
+var disableReference = false;
+var disableHowTo = false;
+
+var articleTypeMap = {};
+var staticTypeMap = {};
+
+// find users with edit permissions
+var editor = wiki.pagepermissions();
+var userEdit = editor.update ?? false;
+
+// select appropriate guide
+var guide = __request.args.guide ?? 'guide';
+var defaultGuide = 'guide';
+guide = string.tolower(guide);
+
+
+// check if we have a cached version
+var cachekey = null;
+var nocache = __request.args.nocache;
+if((!user.seated && guide !== 'history') || nocache) {
+let cachekey = 'guide-' .. string.hash(
+site.hostname .. '-' ..
+page.id .. '-' ..
+wiki.recentchangestimestamp{ path: 'Template:MindTouch' } .. '-' ..
+wiki.recentchangestimestamp());
+if(nocache) {
+webcache.clear(cachekey);
+let cachekey = null;
+} else {
+var cached = webcache.fetch(cachekey);
+if(cached) {
+return cached;
+}
+}
+}
+
+
+// build document
+var result = (
+
+var guidepages = import('MindTouch/IDF2/Functions/GuidePages', { });
+var pages = guidepages.pages;
+
+// the guide expects to be within a <table>
+<div id="landing-page-content">
+
+/*
+* Main guide page
+*/
+<div class="landing-page-content" id="guide-guide-content">
+
+
+// find users with edit permissions
+var editor = wiki.pagepermissions();
+var userEdit = editor.update ?? false;
+
+// assumes pages has already been decorated with category
+var topics = [ p foreach var p in pages where p.topic ];
+
+// direct children of this page
+var child_topics = [ p foreach var p in topics where p.parent_id == page.id ];
+
+// show the navigation inside a non-indexable <div>
+<div class="noindex">
+<div class="mt-idf-guide-overview">
+
+
+if(#topics > 0) {
+if (userEdit) {
+<div class="admin-action"> wiki.create{template: "MindTouch/IDF2/Pages/Topic_Page", label: wiki.localize("MindTouch.IDF.topic.action")};
+</div>
+}
+else
+{
+<div class="admin-action"></div>
+}
+
+var itemCount = 0;
+var listItems = [];
+var hasEntries = 0;
+
+foreach(var topic_page in child_topics) {
+var li = <li class="single-topic">
+
+
+var topic_subpages = template("Biamp/ListBiampTopicSubpages", {
+topic_page: topic_page,
+pages: pages
+});
+
+
+
+if(#topic_subpages['//div'] == 1)
+{
+<a class="collapsible_item" id=('section-id-' .. topic_page.id) style="text-decoration: none;"></a><a class="section-title" href=(topic_page.uri) >topic_page.title</a>
+}
+else
+{
+<a class="section-title-empty" href=(topic_page.uri) >topic_page.title</a>
+}
+<div class="section-description">
+var description = topic_page.overview ?? wiki.text(topic_page.path, "Overview");
+string.substr(description, 0, 100);
+if (string.length(description) > 100){
+"...";
+}
+</div>
+<div id=('section-id-' .. topic_page.id .. '-contents') class="section-contents-wrapper">
+topic_subpages;
+</div>
+
+
+</li>;
+let listItems = listItems .. [{ index: itemCount, html: li }];
+let itemCount += 1;
+}
+
+var left = [item.html foreach var item in listItems where item.index % 2 == 0];
+var right = [item.html foreach var item in listItems where item.index % 2 == 1];
+
+foreach(var html_column in [left, right]){
+<div class="landing-page-guide-column">
+<ul class="user-guide-contents">
+foreach(var li_html in html_column) {
+li_html;
+}
+</ul>
+<ul class="user-guide-contents">
+</ul>
+</div>
+}
+} else {
+if (userEdit) {
+<div class="action">
+wiki.create{template: "MindTouch/IDF2/Pages/Topic_Page", label: wiki.localize("MindTouch.IDF.topic.action")};
+</div>
+
+<div class="add-topic-info">
+<h5>wiki.localize("MindTouch.IDF2.guide.empty");</h5>
+wiki.localize("MindTouch.IDF2.guide.text");
+</div>
+} else {
+<div class="add-topic-info">
+<h5>wiki.localize("MindTouch.IDF2.guide.empty.community");</h5>
+wiki.localize("MindTouch.IDF2.guide.text.community");
+</div>
+}
+}
+</div>
+</div>
+</div>
+</div>
+
+);
+
+// keep generated document
+cachekey ? webcache.store(cachekey, result, 2592000) : result;

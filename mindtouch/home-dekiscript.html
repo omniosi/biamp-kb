@@ -1,7 +1,7 @@
 <div id="home-search">
     <form ('action')="/Special:Search">
         <input name="type" type="hidden" value="wiki" />
-        <input class="home-search-field" name="search" ('placeholder')="Search Biamp Technical Support" type="text" />
+        <input class="home-search-field" name="search" ('placeholder')="How can we help you?" type="text" />
         <input class="home-search-button" type="button" />
     </form>
     if (!user.anonymous) {
@@ -36,7 +36,8 @@ template("Biamp/Featured article", {
         <li class="line"></li>
         <li class="vi"><a href="/VoIP">"VoIP"</a></li>
         <li class="ge"><a href="/General">"General"</a></li>
-        <li class="vd"><a href="/Video">"Video"</a></li>
+        <!-- <li class="vd"><a href="/Video">"Video"</a></li> -->
+        <li class="vd"><a href="/Videos">"Videos"</a></li>
     </ul>
 </div>
 <div id="home-quick-links">

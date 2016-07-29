@@ -143,107 +143,6 @@ ul{ list-style: none; }
         background: #E6E7E8;
         padding: 0;
     }
-    #audia
-    {
-    background: url(/@api/deki/files/903/an_icon.png) no-repeat left top;
-    display: block;
-    height: 62px;
-    width: 81px;
-    }
-
-    #audia:hover
-    {
-    background-position: -81px 0;
-    cursor: pointer;
-    }
-
-    #tesira
-    {
-    background: url(/@api/deki/files/904/t_icon.png) no-repeat left top;
-    display: block;
-    height: 62px;
-    width: 45px;
-    }
-
-    #general
-    {
-    background: url(/@api/deki/files/2192/general_icon.png) no-repeat left top;
-    display:block;
-    height:60px;
-    width:52px;
-    }
-
-    #general:hover
-    {
-    background-position: -52px 0;
-    cursor: pointer;
-    }
-
-    #devio
-    {
-    background: url(/@api/deki/files/2191/devio_icon.png) no-repeat left top;
-    display: block;
-    height: 60px;
-    width: 45px;
-    }
-
-    #tesira:hover, #vocia:hover, #voip:hover, #faq:hover, #devio:hover
-    {
-    background-position: -45px 0;
-    cursor: pointer;
-    }
-
-    #vocia
-    {
-    background: url(/@api/deki/files/905/v_icon.png) no-repeat left top;
-    display: block;
-    height: 62px;
-    width: 45px;
-    }
-
-    #voip
-    {
-    background: url(/@api/deki/files/906/voip_icon.png) no-repeat left top;
-    display: block;
-    height: 62px;
-    width: 45px;
-    }
-
-    #videos
-    {
-    background: url(/@api/deki/files/957/videos_icon.png) no-repeat left top;
-    display: block;
-    height: 62px;
-    width: 46px;
-    }
-
-    #videos:hover
-    {
-    background-position: -46px 0;
-    cursor: pointer;
-    }
-
-    #faq
-    {
-    background: url(/@api/deki/files/910/faq_icon.png) no-repeat left top;
-    display: block;
-    height: 62px;
-    width: 45px;
-    }
-
-    #internal
-    {
-    background: url(/@api/deki/files/911/internal_icon.png) no-repeat left top;
-    display: block;
-    height: 62px;
-    width: 55px;
-    }
-
-    #internal:hover
-    {
-    background-position: -55px 0;
-    cursor: pointer;
-    }
 
     #errortext
     {
@@ -308,98 +207,6 @@ ul{ list-style: none; }
         text-decoration:none;
         color:#cd202c;
     }
-
-    #search-field2 {
-        /*width:564px;*/
-        /*margin-right:13px;*/
-        /*border-color:#ccc;*/
-        /*font-size:18px;*/
-        /*margin-top:10px;*/
-        display: none;
-    }
-
-    #search-button2 {
-        /*width:25px;*/
-        /*padding:0;*/
-        /*font-size:10px;*/
-        /*background-color:#cd202c;*/
-        /*color:white;*/
-        display: none;
-    }
-
-    #search-field2::-webkit-input-placeholder {
-        font-size: 14px;
-        font-style:italic;
-        padding-top: 2px;
-        color: #898989;
-    }
-
-    #search-field2:-ms-input-placeholder {
-        font-size: 14px;
-        font-style:italic;
-        padding-top: 2px;
-        color: #898989;
-    }
-
-    #search-field2:-moz-placeholder {
-        font-size: 14px;
-        font-style:italic;
-        padding-top: 2px;
-        color: #898989;
-    }
-    #home-quick-links {
-        display:none;
-        width:175px;
-        max-height:495px;
-        float:left;
-        border:1px solid #9e9e9e;
-        border-left:0px;
-        border-top:50px solid #cd202c;
-        border-bottom-right-radius:3px;
-        border-top-right-radius:3px;
-        color:#333;
-        overflow-y:auto;
-    }
-    #quick-links-list {
-        list-style-type:none;
-        margin-left:0px;
-        padding-left:4px;
-    }
-    #quick-links-heading {
-        text-align:center;
-        font-size:15px;
-        font-weight:700;
-        letter-spacing:2px;
-        font-variant:small-caps;
-        margin-top:7px;
-    }
-    #quick-links-list ul {
-        padding-left:15px;
-        font-size:11.5px;
-        text-indent:-6px;
-        margin-bottom:15px;
-        list-style-type:square;
-    }
-    #quick-links-list a {
-        color:#555;
-     }
-    .quick-links-heading-l2 {
-        font-size:15px;
-        border-top:1px solid #a44;
-        margin-right:10px;
-        padding-top:2px;
-        padding-left:3px;
-        font-variant:small-caps;
-        font-weight:600;
-        color:#555;
-    }
-
-    /*.content{
-        position: relative;
-        width: 80%;
-        left: 10%;
-        padding: 20px 0;
-    }*/
     #welcome-text h1,
     #welcome-text p{
         font-size: 16px;
@@ -418,12 +225,12 @@ ul{ list-style: none; }
         position: relative;
     }
     .columbia-page-home #home-search{
-        background: #ccc url("/@api/deki/files/2275/facet-art.png") center 0 no-repeat;
+        background: #ccc url("/@api/deki/files/2742/facet-art.png") center 0 no-repeat;
         -webkit-background-size: cover;
         background-size: cover;
     }
     #home-search{
-        background: #ccc url("/@api/deki/files/2260/hex-bk_35o.png") center 0 no-repeat;
+        background: #ccc url("/@api/deki/files/2748/hex-bk_35o.png") center 0 no-repeat;
         -webkit-background-size: cover;
         background-size: cover;
         padding: 50px 10%;
@@ -432,7 +239,8 @@ ul{ list-style: none; }
         padding: 0 !important;
     }
     #mt-summary,
-    .elm-header-user-nav{
+    .elm-header-user-nav
+    {
       display: none;
     }
     .nav{
@@ -448,7 +256,7 @@ ul{ list-style: none; }
       padding: 1em 10%;
       color: #D9272E;
       background-color: #E6E7E8;
-      background-image: url(/@api/deki/files/2276/icon_general.png);
+      background-image: url("/@api/deki/files/2743/icon_general.png");
       background-repeat: no-repeat;
       background-position: 90% 50%;
       -webkit-background-size: 2em;
@@ -457,12 +265,12 @@ ul{ list-style: none; }
       display: block;
       text-transform: uppercase;
     }
-    .nav li.an a{ background-image: url(/@api/deki/files/2261/icon_audia-nexia.png); -webkit-background-size: 4em; background-size: 4em; }
-    .nav li.te a{ background-image: url(/@api/deki/files/2267/icon_tesira.png); }
-    .nav li.vo a{ background-image: url(/@api/deki/files/2270/icon_vocia.png); }
-    .nav li.de a{ background-image: url(/@api/deki/files/2262/icon_devio.png); }
-    .nav li.vi a{ background-image: url(/@api/deki/files/2271/icon_voip.png); }
-    .nav li.vd a{ background-image: url(/@api/deki/files/2268/icon_videos.png); }
+    .nav li.an a{ background-image: url("/@api/deki/files/2744/icon_audia-nexia.png"); -webkit-background-size: 4em; background-size: 4em; }
+    .nav li.te a{ background-image: url("/@api/deki/files/2751/icon_tesira.png"); }
+    .nav li.vo a{ background-image: url("/@api/deki/files/2753/icon_vocia.png"); }
+    .nav li.de a{ background-image: url("/@api/deki/files/2746/icon_devio.png"); }
+    .nav li.vi a{ background-image: url("/@api/deki/files/2756/icon_voip.png"); }
+    .nav li.vd a{ background-image: url("/@api/deki/files/2755/icon_videos.png"); }
     .nav li.line a { display: none }
 
 
@@ -493,16 +301,11 @@ ul{ list-style: none; }
     @media (min-width: 830px) {
        .main{
           position: relative;
-          /*top: 120px;*/
-          /*top: 160px;*/
           top: 180px;
         }
        #home-search{
             padding: 100px 10%;
         }
-/*        .columbia-page-home input.home-search-field{
-            padding: 2em 12% 2em 4%;
-        }*/
         input.home-search-field{
             padding: 1em 12% 1em 1.5%;
             top: 33%;
@@ -513,8 +316,6 @@ ul{ list-style: none; }
           .nav-bar{
             position: relative;
             padding: 40px 10% 35px;
-            /*top: -150px;*/
-            /*top: -325px;*/
             top: -360px;
           }
           #featured-article-wrapper{
@@ -524,14 +325,12 @@ ul{ list-style: none; }
           }
           .featured-article-content{
             padding: 0;
-            /*padding: 20px 0%;*/
             padding: 10px 0% 5px;
             margin: 0 auto;
           }
           .nav-bar .content{
             padding: 0;
             width: 80%;
-            /*left: 0;*/
             padding: 20px 0%;
             margin: 0 auto;
           }
@@ -553,24 +352,18 @@ ul{ list-style: none; }
             display: inline-block;
             vertical-align: top;
             margin-right: 11%;
-            /*margin: 0 7.5%;*/
             margin: 0 !important;
           }
           .nav.one li{
-            /*width: 25%;*/
             width: 24%;
           }
           .nav.two li{
-            /*width: 33%;*/
             width: 32%;
           }
           .nav:last-child li{
-            /*margin-right: 0;*/
             margin: 0 6%;
           }
           .nav li a{
-            /*display: inline-block;*/
-            /*margin: 0 4%;*/
             margin: 0 auto;
             padding: 6em 0 0;
             background-position: 50% 0;
@@ -608,7 +401,7 @@ ul{ list-style: none; }
           .nav li.line:after,
           .nav li.line:before{
             content: "";
-            background: url(/@api/deki/files/2272/left-arrow.png) no-repeat;
+            background: url("/@api/deki/files/2757/left-arrow.png") no-repeat;
             width: 4px;
             height: 8px;
             position: absolute;
@@ -616,7 +409,7 @@ ul{ list-style: none; }
             left: 0;
           }
           .nav li.line:after{
-            background: url(/@api/deki/files/2274/right-arrow.png) no-repeat;
+            background: url("/@api/deki/files/2759/right-arrow.png") no-repeat;
             left: auto;
             right: 0;
           }

@@ -2,19 +2,23 @@
 	background: url(../@api/deki/files/2260/hex-bk_35o.png) center 0 no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
-	padding: 50px 10%;
+	padding: 20px 10%;
 	width: 100%;
+	text-align: center;
 }
 .search-nav .title{
 	color: #D9272E;
 	background-repeat: no-repeat;
-	padding: 0.125em 0 0.5em 70px;
+	padding: 0.275em 0 0.75em 50px;
 	margin-left: 10%;
 	text-transform: uppercase;
 	margin: 0 auto;
 	width: 180px;
 	display: inline-block !important;
 	font-size: 32px;
+}
+.search-nav .title.vocia{
+	background: url(../../@api/deki/files/2269/icon_vocia_h.png) no-repeat;
 }
 #searchbox{
 	position: relative;
@@ -56,7 +60,6 @@
 	width: auto;
 	padding-top: 1em;
 	padding-top: 1.25em;
-	float: right;
 }
 .search-nav .social li{
 	display: inline-block;
@@ -86,7 +89,8 @@
 	cursor: pointer;
 	font-size: 19px;
 	font-weight: bold;
-	padding: .5em .5em .5em 155px;
+	padding: .5em;
+	padding: .5em .5em .5em 2em;
 	text-transform: uppercase;
 	display: block !important;
 	position: relative;
@@ -104,6 +108,7 @@
 	position: absolute;
 	bottom: -21px;
 	left: 155px;
+	left: 2em;
 }
 #landing-page-content{
 	padding: 2em 40px;
@@ -142,11 +147,12 @@
 .cont p{
 	color: #6D6E71;
 	font-size: 14px;
-	font-style: italic;
+	/*font-style: italic;*/
 	padding-bottom: 1.5em;
 }
 .wiki-tree{
-	padding-left: 9px;
+	/*padding-left: 9px;*/
+	padding-left: 18px;
 }
 .wiki-tree ul{
 	margin-left: 2%;
@@ -161,14 +167,23 @@ input[type=button]:hover{
 	-webkit-box-shadow: none;
 	box-shadow: none;
 }
+.copyright,
+.elm-footer-copyright,
+.elm-nav,
+.elm-header-user-nav,
 .elm-meta-data,
 #title{
+	display: none;
+}
+.elm-content-container header{
 	display: none;
 }
 
 @media (min-width: 830px) {
 	.search-nav{
+		padding: 50px 10px;
 		padding: 1em 5% 1em 10%;
+		text-align: left;
 	}
 	.search-nav .second #searchnav,
 	.search-nav .second .social,
@@ -179,6 +194,7 @@ input[type=button]:hover{
 	}
 	.search-nav .title{
 		margin: 0;
+		padding: 0.125em 0 0.5em 70px;
 		padding: 1em 0 1em 70px;
 	}
 	.search-nav .title.vocia{
@@ -236,6 +252,20 @@ input[type=button]:hover{
 		margin: 0 0 0.5em 0;
 		padding-left: 15px;
 	}
-
+	#nav h3,
+	#nav h1{
+		padding: .5em .5em .5em 155px;
+	}
+	#nav .selected h3:after,
+	#nav .selected h1:after{
+			left: 155px;
+	}
 }
 @media (min-width: 83em) { .elm-content-container{ max-width: 100% !important; min-width: 100% !important; } }
+@media (min-width: 37.5em) { .elm-content-container{ padding: 0rem !important; } }
+@media (min-width: 25em) { .elm-content-container{ padding: 0 !important; } }
+@media (min-width: 18.75em){
+  .elm-footer{
+    bottom: 0 !important;
+  }
+ }

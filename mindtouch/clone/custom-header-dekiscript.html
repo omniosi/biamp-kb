@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <meta name='google-site-verification' content='pIJwquUdEFQgyFOTcB9x2gv9munJmWT9QkDMU3XiYTM' />
+        <meta name='google-site-verification' content='ZtTRjxiHisqQ93v41G-LdDtypswkr6QEdmN73w7qNdg' />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.33/example1/colorbox.min.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.33/jquery.colorbox-min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+        <script src='//platform.linkedin.com/in.js' type='text/javascript'>"lang: en_US"</script>
+        <script> "
+            (function(d, s, id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src='//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0';fjs.parentNode.insertBefore(js,fjs);}(document,'script','facebook-jssdk'));
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');
+        " </script>
+
+        <script> "
+            //$('head').prepend('<style type=\"text/css\">@font-face {font-family: ProximaNova; src: url(/@api/deki/files/620/ProximaNova-RegWeb.eot);} @font-face {font-family: ProximaNova; src: url(/@api/deki/files/621/ProximaNova-RegWeb.woff) format(\"woff\");} @font-face {font-family: ProximaNova; src: url(/@api/deki/files/618/ProximaNova-RegItWeb.eot); font-style: italic;} @font-face {font-family: ProximaNova; src: url(/@api/deki/files/619/ProximaNova-RegItWeb.woff) format(\"woff\"); font-style: italic;} @font-face {font-family: ProximaNova;src: url(/@api/deki/files/616/ProximaNova-BoldWeb.eot); font-weight: bold;} @font-face {font-family: ProximaNova; src: url(/@api/deki/files/617/ProximaNova-BoldWeb.woff) format(\"woff\"); font-weight: bold;} @font-face {font-family: ProximaNova; src: url(/@api/deki/files/614/ProximaNova-BoldItWeb.eot); font-weight: bold; font-style: italic;} @font-face {font-family: ProximaNova; src: url(/@api/deki/files/615/ProximaNova-BoldItWeb.woff) format(\"woff\"); font-weight: bold; font-style: italic;}</style>');
+            $(document).ready(function () {
+                $('<script src=\"https://apis.google.com/js/platform.js\" async defer></' + 'script>').appendTo(document.body);
+                $('a.thumb').colorbox({rel:'nofollow', opacity:0.6, maxHeight:'95%', maxWidth:'95%'}); //setup colorbox attributes
+                $('.mt-site-search form').append('<input name=\"type\" id=\"mt-search-type\" type=\"hidden\" value=\"wiki\">'); //force search results to only return articles, and exclude images/files
+                $('.deki-search-form form').append('<input name=\"type\" id=\"mt-search-type\" type=\"hidden\" value=\"wiki\">'); //same as above, for search field on search results page
+                $('input[name=fpid]').val(''); //force search to always be global, not dependent on the page you're searching from
+                $('input[name=path]:not(\".no-searchscope-limit\")').val(''); //force search to always be global, not dependent on the page you're searching from
+
+                //this style overrides the standard logo on all pages
+                $('.mt-logo').html('<a href=\"/\" title=\"Cornerstone\"><img class=\"csl\" alt=\"Cornerstone\" src=\"/@api/deki/files/612/cornerstone_logo.png\" title=\"Cornerstone\" /></a><a href=\"http://www.biamp.com/\" target=\"_blank\" title=\"Biamp Systems\"><img class=\"bsl\" alt=\"Biamp Systems\" src=\"/@api/deki/files/613/biamp_logo.png\" title=\"Biamp Systems\" /></a>');
+
+                //this style overrides the poweredBy information in the lower right portion of the footer
+                $('.poweredBy').html('Contact us at +1 503.641.7287 or <a href=\"mailto:support@biamp.com\">support@biamp.com</a>');
+
+                //adds a small feedback link and a login link to the footer of the page
+                //$('ul.mt-site-info').html('<li>© Copyright 2013 Biamp Systems</li><li><a rel=\"custom nofollow\" href=\"#\" class=\"deki-search-feedback-launcher feedback-popup-trigger biamp-feedback\" feedbackparams=\"{}\">Feedback</a></li><li class=\"last\"><a href=\"/Special:Userlogin\">Biamp Login</a></li>');
+                //$('.biamp-feedback').on('click',function(a){a.preventDefault();var b=JSON.parse($(this).attr('feedbackparams'))||{};Deki.Ui.Dialogs.open('MindTouch/Controls/Dialogs/PageFeedback',{width:450,javascript:{file:'dialog.pageFeedback',namespace:'PageFeedback'},open:function(){Deki.Ui.Dialog.PageFeedback.init(_(b).defaults({context:'generic'}))}},b)});
+                //deactivated feedback link because it doesn't work, just adding login link for now
+                $('ul.mt-site-info').html('<li>© Copyright 2013-2016 Biamp Systems. All rights reserved.&nbsp;&nbsp;|</li><li class=\"last\"><a href=\"/Special:Userlogin\">Biamp Login</a></li>');
+
+                //the styles below are used by the search results page
+                //they have to remain in the custom header, otherwise
+                //they will be overwritten by the local CSS in the template
+                $('li.mt-single-nav a').css( 'color', '#ffffff' );
+                $('li.mt-single-nav a').css( 'font-weight', 'normal' );
+                $('li.mt-single-nav a').css( 'font-size', '19px' );
+                $('li.mt-single-nav a:hover').css( 'color', '#ffffff' );
+                $('li.mt-single-nav a:hover').css( 'font-weight', 'normal' );
+                $('li.mt-single-nav a:hover').css( 'font-size', '19px' );
+                $('li.mt-single-nav a:hover').css( 'text-decoration', 'none' );
+                $('div.title a').css( 'color', '#cd202c' );
+                $('div.title a:visited').css( 'color', '#cd202c' );
+
+                //these styles are for the custom home logo
+                //the custom CSS was being flaky
+                //if there's time, we'll come back to this later
+                $('li.home').css( 'background-image', 'url(/@api/deki/files/611/home_icon.png)' );
+                $('li.home').css( 'display', 'block');
+                $('li.home').css( 'height', '35px');
+                $('li.home').css( 'width', '48px');
+                $('li.home').css( 'margin-top', '-7px');
+                $('.mt-site-nav .help-center').css( 'background','none');
+
+    $('.product-menu.quick-more').append('<a class=\"biamp-nav\"><img src=\"/@api/deki/files/641/product-dropdown-bg.png\" width=\"19\" height=\"17\" border=\"0\" /></a>');
+    $('a.biamp-nav').click(function(){$('.product-menu ul.dropdown').show();return false;});
+    if (window.location.protocol == 'https:') {
+        $('.product-menu.quick-more li a[href=\"https://support.biamp.com/Cornerstone_FAQ\"]').parent().remove();
+        $('.product-menu.quick-more li a[href=\"https://support.biamp.com/Videos\"]').parent().appendTo('.product-menu.quick-more ul.dropdown');
+    } else {
+        $('.product-menu.quick-more li a[href=\"http://support.biamp.com/Cornerstone_FAQ\"]').parent().remove();
+        $('.product-menu.quick-more li a[href=\"http://support.biamp.com/Videos\"]').parent().appendTo('.product-menu.quick-more ul.dropdown');
+    }
+
+    //social media sharing links
+    var pagecategory = document.location.href.split('/')[3];
+    if (['Tesira', 'Vocia', 'Audia-Nexia'].indexOf(pagecategory) == -1)
+        {pagecategory = '';} else {pagecategory = ',' + pagecategory.replace('-', ',');}
+    $('ul.page-controls').append('<br/><li id=\"fbshare\" class=\"socialmediashare\"><div class=\"fb-share-button\" data-layout=\"button\"></div></li>');
+    $('ul.page-controls').append('<li id=\"lishare\" class=\"socialmediashare\"><script type=\"IN/Share\"></' + 'script></li>');
+    $('ul.page-controls').append('<br/><li id=\"twshare\" class=\"socialmediashare\"><a href=\"https://twitter.com/share\" class=\"twitter-share-button\" data-lang=\"en\" data-count=\"none\" data-related=\"Biamp\" data-hashtags=\"Biamp' + pagecategory + '\">Tweet</a></li>');
+    $('ul.page-controls').append('<li id=\"gpshare\" class=\"socialmediashare\"><div class=\"g-plus\" data-action=\"share\" data-annotation=\"none\"></div></li>');
+
+    //change email button default subject and message
+    $('a[title=\"Email page\"]').attr('href', 'mailto:?subject=Biamp%20Systems%20Cornerstone%20article&body=Please%20take%20a%20look%20at%20this%20article%20on%20Biamp%20Systems%27%20Cornerstone%20website%3A%20' + encodeURIComponent(window.location.href));
+
+    //adds internal article message box on internal knowledgebase articles
+    if (window.location.pathname.split('/')[2] == 'Internal_articles') {
+        $('#page-top').prepend('<div class=\"internalmsgbox\"><div style=\"margin-left:50px;\"><p style=\"font-size:150%; font-weight:bold;\">This is an internal-only, confidential article.</p><p>This article may contain sensitive and/or confidential information. Please consider this when deciding whether to share the contents of this article outside of Biamp Systems.</p><p style=\"text-align:right; margin-right:20px; font-size:11px;\"><a href=\"#\" onclick=\"$(\\\'.internalmsgbox\\\').slideUp();\">Hide</a></p></div></div>');
+    }
+
+    //this code adds a category identifier to each search result,
+    //so it's easy to see what product category each search result is in
+    if (window.location.pathname == '/Special:Search') {
+        var checkExist = setInterval(function() {
+            if ($('#mt-search-results').length) {
+                clearInterval(checkExist);
+                $('#mt-search-results').on('DOMSubtreeModified', function() {
+                    var searchresults = $('.result').not($('.updated'));
+                    $('.result').addClass('updated');
+                    searchresults.each(function() {
+                        if ($('.category', this).length) return true;
+                        if ($('a.go', this).length) {
+                            var resultcat = $('a.go', this).attr('href').split('/')[3];
+                            if (resultcat != 'Audia-Nexia' && resultcat != 'Tesira' && resultcat != 'Vocia' && resultcat != 'Internal' && resultcat != 'Videos' && resultcat != 'Calculators' && resultcat != 'General' && resultcat != 'Devio') return true;
+                            if (resultcat == 'Audia-Nexia') resultcat = 'Audia/Nexia';
+                            if (resultcat == 'Internal') {
+                                resultsubcat = $('a.go', this).attr('href').split('/')[4];
+                                if (resultsubcat == 'Internal_articles') resultcat = 'Internal Knowledgebase';
+                                if (resultsubcat == 'Draft_articles') resultcat = 'Internal &rarr; Draft articles';
+                                if (resultsubcat == 'Resources') resultcat = 'Internal &rarr; Resources';
+                            }
+                            $('div.preview', this).prepend(
+                                '<div class=\"info category\">' + resultcat + '</div>'
+                            );
+                        }
+                    } );
+                } );
+            }
+        }, 100);
+    }
+
+} );" </script>
+    <style>"
+        .logobox {
+          position: relative;
+          padding: 1.5em 10%;
+        }
+        .logobox .logo-right {
+          float: right;
+          position: relative;
+          top: 8px;
+        }
+        .elm-header-logo-container{
+            display: none;
+        }
+        .elm-header-home-nav{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    "</style>
+</head>
+<body>
+    <div id='fb-root'></div>
+    <header class="logobox">
+        <a href="/"><img id="cnrstn-logo" class="logo-left" src="@api/deki/files/2740/corner-stone_lrg.png" alt="Corner Stone logo" /></a>
+        <a href="http://www.biamp.com/"><img id="biamp-logo" class="logo-right" src="@api/deki/files/2739/biamp_lrg.png" alt="Biamp logo" /></a>
+    </header>
+</body>
+</html>
