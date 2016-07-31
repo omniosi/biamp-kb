@@ -1,0 +1,53 @@
+<div class="search-nav">
+	<h1 class="title vocia">"Audia Nexia"</h1>
+	<div class="second">
+	   <form id="searchbox" ('action')="/Special:Search">
+	       <input name="type" type="hidden" value="wiki" />
+	       <input class="home-search-field" name="search" ('placeholder')="How can we help?" type="text" />
+	       <input class="home-search-button" type="button" />
+	   </form>
+		<ul class="social">
+			<li class="twitter"><a href="#" target="_blank">"twitter"</a></li>
+			<li class="linkedin"><a href="#" target="_blank">"linkedin"</a></li>
+			<li class="facebook"><a href="#" target="_blank">"facebook"</a></li>
+			<li class="googleplus"><a href="#" target="_blank">"googleplus"</a></li>
+		</ul>
+	</div>
+</div>
+<div id="nav" class="main">
+	<ul>
+		<li id="tab-guide-contents" class="header selected">
+			<h3>"Articles > Cobranet"</h3>
+		</li>
+		<li>
+			<ul class="cont">
+				<li>
+					<h4>"Overview"</h4>
+					<p>"Learn how to integrate CobraNet devices into your system."</p>
+				</li>
+				<li>
+					<h4>"Background"</h4>
+					<p>"CobraNet is a network protocol that allows digital audio signals to be sent over a standard Ethernet network.  CobraNet is designed for low latency, multi-channel, uncompressed audio transmissions. Many Biamp products are compatible with CobraNet.
+					</p><p>
+CobraNet traffic should be physically separated from regular Ethernet communications given that CobraNet uses broadcast transmissions which are resource intensive. When designing or assessing whether existing network infrastructure will be satisfactory for a Vocia system there’s some specific points to be considered.
+					</p><p>
+If sharing Ethernet and CobraNet traffic on the same switch (not ‘hubs’), the Ethernet switches should be of the 'managed layer 2' type. Managed switches offer several advantages including the ability to segregate switch ports into Virtual LAN’s (VLAN). In addition, they offer Spanning Tree Protocol (STP) which is used for creating redundant network links, as well as trunking to increase network bandwidth.
+					</p><p>
+Another important point to consider is that CobraNet uses Layer 2 technology and is therefore non-routable. This means all Cobranet devices within a Vocia World are required to be on the same network subnet otherwise they will not communicate or share digital audio with each other.
+					</p><p>
+Since CobraNet uses Ethernet cabling there is a limit of 300ft (100 meters) between each Ethernet switch and device. However, fiber-optic cable may be used to extend this distance limitation.  Fiber-optic cable can be used with switches that have fiber-optic ports, or media converters can be used to interface fiber-optic cable with standard RJ-45 ports.
+					</p><p>
+Additional information regarding CobraNet compliant network topologies and protocols can be found at http://www.cobranet.info/support/design/switched_networks."</p>
+				</li>
+				<li>
+					<h4>"CobraNet platforms"</h4>
+					<p>"Biamp has a number of devices within the Audia, Tesira, and Vocia product lines that support CobraNet. Nexia products cannot use CobraNet.</p>
+				</li>
+				<li>
+					<h4>"Articles"</h4>
+						wiki.tree(page.path);
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
