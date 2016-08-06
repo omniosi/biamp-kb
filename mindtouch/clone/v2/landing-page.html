@@ -1,0 +1,92 @@
+/********************************************************************************************
+LandingPage Template
+Scott Wieser 2016
+
+Creates a product landing page.
+
+USAGE:
+
+template("Biamp/LandingPage", {
+    name:"Product name",
+    logourl:"@api/deki/files/1234/mylogo.png",
+    links:[
+        ["/relative/url/1", "Documents"],
+        ["/relative/url/2", "Software/Firmware"],
+        ["/relative/url/3", "FAQ"]
+        ]
+    });
+
+PARAMETERS
+
+name : str
+    Name of product (i.e. "Vocia") that will go at the top of the page
+
+logourl : str
+    URL of landing page logo image.  Best to use a relative URL for internal images.
+
+links : list of lists
+    A list containing URLs and names of additional links to be displayed below article list.
+
+
+EXAMPLE:
+
+template("Biamp/LandingPage", {
+    name:"Vocia",
+    logourl:"@api/deki/files/2752/icon_vocia_h.png",
+    links:[
+        ["/Vocia/Documents", "Documents"],
+        ["/Vocia/Software-Firmware", "Software/Firmware"],
+        ["/Vocia/Miscellaneous/Vocia_FAQ", "Vocia FAQ"]
+        ]
+    });
+
+**********************************************************************************************/
+
+var logourl = $logourl ?? $1 ?? "";
+
+<div class="search-nav">
+    <h1 class="biamp-title" style=("background:url(".. logourl ..") no-repeat; background-position:0 0;")>
+    $name ?? $0 ?? "";
+    </h1>
+    <div class="second">
+       <form id="searchbox" ('action')="/Special:Search">
+           <input name="type" type="hidden" value="wiki" />
+           <input class="home-search-field" name="search" ('placeholder')="How can we help?" type="text" />
+           <input class="home-search-button" type="button" />
+       </form>
+        <ul class="social">
+            <li><a href="https://twitter.com/Biamp" target="_blank" class="twitter">"twitter"</a></li>
+            <li><a href="https://www.linkedin.com/company/biamp-systems" target="_blank" class="linkedin">"linkedin"</a></li>
+            <li><a href="https://www.facebook.com/BiampSystems/" target="_blank" class="facebook">"facebook"</a></li>
+            <li><a href="https://plus.google.com/106451594095575113201" target="_blank" class="googleplus">"googleplus"</a></li>
+        </ul>
+    </div>
+</div>
+<div id="nav" class="main">
+    <ul>
+        <li id="tab-guide-contents" class="header selected">
+            <h1>"Articles"</h1>
+        </li>
+        <li>
+            <ul>
+                <li>
+
+template('MindTouch/IDF3/Views/Guide');
+
+                </li>
+            </ul>
+        </li>
+
+        var links = $links ?? $2 ?? [];
+        foreach(var i in links) {
+            <li>
+                <a href=(i[0])>
+                    <h1>
+                        i[1];
+                    </h1>
+                </a>
+            </li>
+        }
+
+    </ul>
+</div>

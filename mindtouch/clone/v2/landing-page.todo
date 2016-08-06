@@ -1,0 +1,16 @@
+Can you take a look at the CSS in this template:
+https://biamp-clone.mindtouch.us/Template:Biamp/LandingPage
+That is now the template that is creating each of the landing pages:
+·         https://biamp-clone.mindtouch.us/Audia-Nexia
+·         https://biamp-clone.mindtouch.us/Tesira
+·         https://biamp-clone.mindtouch.us/Vocia
+·         https://biamp-clone.mindtouch.us/Devio
+
+There are a few issues with the CSS on that page, including:
+✔ The spacing between the article names gets way too big when viewing from mobile device @done (16-08-02 23:53)
+✔ The indentation of the article names doesn’t look right when viewing from mobile device @done (16-08-02 23:53)
+✔ The social media buttons don’t do anything when clicked @done (16-08-02 23:53)
+✔ Some pages (like the Audia/Nexia page) have a lot of article names, which creates a lot of empty white space on the right side and pushes everything else way down on the page so that you have to scroll.  Is it possible to display the list of articles in two columns when the page is wide enough to do so? @done (16-08-03 00:06)
+ ✔ Please don’t hide the two bars at the top of the page (the black bar with the “how can we help you” search field, and the gray “Page settings” collapsible box below it.  I’m working on getting those elements to be hidden for non-logged-in users only, but there’s a bug in the Mindtouch software that we’re trying to work around.  Hiding those bars makes it difficult to edit the page. @done (16-08-02 23:53)
+
+If you edit the CSS on the template page, it should update for all of the landing pages at the same time.

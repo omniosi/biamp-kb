@@ -1,0 +1,21 @@
+Another template for the other pages that are sort of like landing pages, but aren’t really landing pages.  The template is mostly a copy/paste of the other template, with some stuff removed.  The template can be found here:
+· https://biamp-clone.mindtouch.us/Template:Biamp/GenericHeader
+So far, I’ve applied the template to two other unique landing pages that aren’t really landing pages:
+· https://biamp-clone.mindtouch.us/Videos
+· https://biamp-clone.mindtouch.us/VoIP
+On those pages, I see the following issues:
+ ✔ The page takes up the full width of the screen with no margins. @done (16-08-03 23:21)
+ ✔ The text in the footer gets pushed over to the right, off the screen. @done (16-08-03 23:22)
+ ✔ The page doesn’t have proper margins when viewed in a mobile size. @done (16-08-03 23:22)
+
+Could you take a look at those issues and fix them in the template?  Once that template is good to go, then we can use it on the secondary pages as well.  I don’t think we want to put a big header on article pages (what you’re referring to as third-level pages), so we won’t need to worry about that.
+
+
+Thanks, looks good.  Here’s a few more things we found today:
+✔ On https://biamp-clone.mindtouch.us/General the page has a long title (“General Audio & Networking”).  There are a few sizes where the title collides with the search bar, like this: @done (16-08-04 22:15)
+
+If there isn’t a good solution to that problem, we can also just name the page “General” instead, although that isn’t ideal.
+
+ ☐ The old site had a “Quick Links” section that gave access to common pages from the home page.  We don’t necessarily need to replicate that on the new site.  However, there is one section that was only accessible via the Quick Links section, which means it’s now not accessible at all except via searching.  That section is the Calculators section.  I’m open to any ideas on how to make that section more accessible, but I’m leaning towards adding it as an additional section icon on the home page, next to the VoIP/General/Videos sections.  If we did that, we’d probably need to get some kind of red calculator icon to make it match the rest.  Can you make that happen, or suggest an alternative?  We can use a temporary icon for now if necessary (like the “i” icon being used for the General category).
+
+ ✔ The footer has been fixed on all pages that have one of our templates, but it is still not looking right on all other pages (like, all articles).  For instance, see the footer on https://biamp-clone.mindtouch.us/Audia-Nexia/CobraNet/CobraNet_network_design . You’ll most likely want to fix this on the Custom Footer template so that it’s fixed everywhere. @done (16-08-04 22:47)

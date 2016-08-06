@@ -1,0 +1,54 @@
+/********************************************************************************************
+GenericHeader Template
+Scott Wieser 2016
+
+Creates the standard Cornerstone header without the rest of the landing page stuff.
+
+USAGE:
+
+template("Biamp/GenericHeader", {
+    name:"Product name",
+    logourl:"@api/deki/files/1234/mylogo.png",
+    });
+
+PARAMETERS
+
+name : str
+    Name of product (i.e. "Vocia") that will go at the top of the page
+
+logourl : str
+    URL of landing page logo image.  Best to use a relative URL for internal images.
+
+
+EXAMPLE:
+
+template("Biamp/LandingPage", {
+    name:"VoIP",
+    logourl:"@api/deki/files/2762/icon_voip_h.png",
+    });
+
+**********************************************************************************************/
+
+var logourl = $logourl ?? $1 ?? "";
+
+if (user.anonymous) {
+    <style>".elm-header-user-nav{display:none;}"</style>
+}
+<div class="search-nav">
+    <h1 class="biamp-title" style=("background:url(".. logourl ..") no-repeat; background-position:0 0;")>
+    $name ?? $0 ?? "";
+    </h1>
+    <div class="second">
+       <form id="searchbox" ('action')="/Special:Search">
+           <input name="type" type="hidden" value="wiki" />
+           <input class="home-search-field" name="search" ('placeholder')="How can we help?" type="text" />
+           <input class="home-search-button" type="button" />
+       </form>
+        <ul class="social">
+            <li><a href="https://twitter.com/Biamp" target="_blank" class="twitter">"twitter"</a></li>
+            <li><a href="https://www.linkedin.com/company/biamp-systems" target="_blank" class="linkedin">"linkedin"</a></li>
+            <li><a href="https://www.facebook.com/BiampSystems/" target="_blank" class="facebook">"facebook"</a></li>
+            <li><a href="https://plus.google.com/106451594095575113201" target="_blank" class="googleplus">"googleplus"</a></li>
+        </ul>
+    </div>
+</div>
